@@ -2,6 +2,8 @@
 
 **Aetherium Rift** collectible card battler — Flutter client + Laravel Sanctum API.
 
+Owned and maintained by **[Tahsan](https://github.com/Tahsan0619)** ([@Tahsan0619](https://github.com/Tahsan0619)).
+
 Fifty original relics, locked vault progression, Astral Exchange chests/keys, squad combat, and foundation ranking.
 
 ---
@@ -139,6 +141,10 @@ cd battle_card_supreme && flutter test
 
 ---
 
-## License / status
+## License
 
-Private game prototype for **Battle Card Supreme / Aetherium Rift**. Screenshots under `docs/screenshots/` are from the Android emulator demo build.
+© Tahsan. **Battle Card Supreme / Aetherium Rift** is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit to **Tahsan**, provide a link to the license, and indicate if changes were made. See `LICENSE` for the full legal text.
+
+Screenshots under `docs/screenshots/` are from the Android emulator demo build.
