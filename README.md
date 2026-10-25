@@ -132,6 +132,18 @@ cd battle_card_supreme && flutter test
 
 ---
 
+## Codebase size
+
+**~17,950 lines of source code** across **180** source files (excludes `vendor/`, Flutter `build/`, and generated caches).
+
+| Language | Lines (approx.) |
+|----------|----------------:|
+| Dart (Flutter client) | 8,913 |
+| PHP (Laravel API) | 8,052 |
+| Python (tooling scripts) | 813 |
+| Other (Gradle/Kotlin, PowerShell, Swift, JS/CSS) | ~170 |
+| **Total** | **~17,950** |
+
 ## Stack highlights
 
 - **Client:** Flutter, Riverpod, Google Fonts, offline combat + online sync  
