@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-primary bg-surface-container-high/60 rounded-lg border border-primary/20 active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Aetherium Rift Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase truncate max-w-[160px]">Live Tactical Duel</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Currencies & Telemetry HUD Strip -->
+<div class="px-margin-mobile py-space-sm bg-surface-container-lowest shadow-md flex items-center justify-between gap-space-xs">
+<!-- Void Shards -->
+<div class="flex-1 flex items-center justify-between px-space-sm py-1.5 bg-surface-container-high rounded-lg shadow-sm">
+<div class="flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">token</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase truncate">Void Shard</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-primary-fixed ml-1">380</span>
+</div>
+<!-- Rift Gold -->
+<div class="flex-1 flex items-center justify-between px-space-sm py-1.5 bg-surface-container-high rounded-lg shadow-sm">
+<div class="flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase truncate">Gold</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-tertiary-fixed-dim ml-1">84.2K</span>
+</div>
+<!-- Astral Gems -->
+<div class="flex-1 flex items-center justify-between px-space-sm py-1.5 bg-surface-container-high rounded-lg shadow-sm">
+<div class="flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase truncate">Gems</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed ml-1">1,450</span>
+</div>
+</div>
+<!-- Store Navigation Horizontal Filter Tabs -->
+<div class="px-margin-mobile py-space-sm flex items-center gap-space-xs overflow-x-auto no-scrollbar">
+<button class="flex items-center gap-1 px-3 py-1.5 bg-primary-container text-on-primary-container rounded-full shadow-sm flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span class="font-label-tactical text-label-tactical uppercase">Astral Exchange</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-on-surface rounded-full shadow-sm flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+<span class="font-label-tactical text-label-tactical uppercase">Daily Supplies</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-on-surface rounded-full shadow-sm flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+<span class="font-label-tactical text-label-tactical uppercase">Rift Pass</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-on-surface rounded-full shadow-sm flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span class="font-label-tactical text-label-tactical uppercase">Gem Store</span>
+</button>
+</div>
+<!-- Cycle Countdown & Tactical Banner -->
+<div class="px-margin-mobile mb-space-sm flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Store Refresh Cycle:</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest" id="cycleTimer">06h 42m 15s</span>
+</div>
+</div>
+<!-- Season Pass Teaser Card (Rift Battle Pass Preview) -->
+<div class="px-margin-mobile mb-space-md">
+<div class="relative overflow-hidden rounded-xl bg-surface-container shadow-md">
+<!-- Background Anime Skin Art -->
+<div class="relative h-32 w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top opacity-75" data-alt="High fantasy anime sci-fi character portrait of Eclipse Astra with radiant violet tactical halo, shimmering neon armor, starry space vortex in the deep void background, sharp detailed cel shading style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4sz_Rvy3AxiaJsDXxnRRQB5pADxxr5zzyaKqD4h4oEgAMqIwjHmuzviH0BfGNKBtruyP2HUc6gAsDLB0sI22ofb6UzcXdAROxMYNTXPvJg0iyiDQZuNoF5cihVswwhK5AszwoF8ibsuFOAsFFZM-E2DpeO5fEY8V7P_9EjbPdiz7ucZcH_ZmVTWvUBtalYSyolV1n_bKxMtRYWxsH8Ocm_NcON815lp8r7fScqKz2EGKsF9wSuVX4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-[14px]">stars</span>
+<span class="font-label-micro text-label-micro text-tertiary uppercase">Season 4 Apex</span>
+</div>
+<div class="absolute top-2 right-2 bg-secondary-container px-2 py-0.5 rounded text-on-secondary-container font-label-micro text-label-micro font-bold uppercase">
+          Exclusive Skin
+        </div>
+</div>
+<!-- Battle Pass Progress & Claim Info -->
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Eclipse Astra Protocol</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tier 42 of 60 Completed</p>
+</div>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-tactical text-label-tactical uppercase shadow-sm active:scale-95 transition-transform flex items-center gap-1">
+<span>Pass Hub</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<!-- Progress Bar Meter -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Store Section Header -->
+<div class="px-margin-mobile mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-1 h-3.5 bg-secondary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide">Astral Artifacts</h3>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Resets Bi-Weekly</span>
+</div>
+<!-- Purchasing Grid Matrix -->
+<div class="px-margin-mobile grid grid-cols-2 gap-space-sm mb-space-md">
+<!-- Card 1: Astra Veyron Memory Shards -->
+<div class="flex flex-col bg-surface-container rounded-lg p-space-sm shadow-sm relative group overflow-hidden justify-between">
+<div class="absolute top-1.5 left-1.5 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-primary font-label-micro text-label-micro uppercase">
+        SSR Fragment
+      </div>
+<div class="absolute top-1.5 right-1.5 bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-label-micro text-label-micro">
+        3/5 Left
+      </div>
+<!-- Card Visual -->
+<div class="w-full h-28 bg-surface-container-lowest rounded overflow-hidden my-space-xs relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Crystalline glowing violet prism holding an ethereal holographic anime hero silhouette, surrounded by dark void stardust, radiant mystical power crystal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmNizfYiM2esPhm1ePI85nxytXstIFbDdQDSILio78jg_KHEhFUCLyKYOXVAxoyw4cp3YcRDJyiwUlRtqLttGIZepncKteh6Y4RGkwmxG2IPabX9MFyPSljdnnvx85bhhvsxLL7nUmem7NQsTy1-0FTBxtkAg1ESx5t4AjzWL5jgOhhihCt71nzaNHs2x02KzKg_L2p3xSsyIyGCMohVjpgDg33zwfp3DtW0V1Pxae3XbId_UL3nMZ"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 rounded text-on-surface font-label-micro text-label-micro">
+          x10
+        </div>
+</div>
+<!-- Item Meta -->
+<div class="min-w-0 mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Astra Memory</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Hero Evolution Material</div>
+</div>
+<!-- Action Button with Currency -->
+<button class="w-full py-2 px-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright rounded flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">token</span>
+<span class="font-label-numeric text-label-numeric text-primary-fixed">150</span>
+<span class="font-label-tactical text-label-tactical uppercase ml-1">Trade</span>
+</button>
+</div>
+<!-- Card 2: Mythic Awakening Core (Featured / Glowing) -->
+<div class="flex flex-col bg-surface-container-high rounded-lg p-space-sm shadow-md relative overflow-hidden justify-between">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-tertiary/20 to-transparent pointer-events-none"></div>
+<div class="absolute top-1.5 left-1.5 bg-tertiary-container text-on-tertiary-container px-1.5 py-0.5 rounded font-label-micro text-label-micro uppercase font-bold">
+        Mythic Core
+      </div>
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-tertiary font-label-micro text-label-micro">
+        1/1 Bi-Weekly
+      </div>
+<!-- Card Visual -->
+<div class="w-full h-28 bg-surface-container-lowest rounded overflow-hidden my-space-xs relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Intricate golden anime sci-fi mechanical heart relic glowing with radiant solar amber energy, runic circular conduits hovering in orbital rings, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz5gkGO6Fo0VavpK-rcJ7lmvlcu_mnUL7Tgz0dm9X2he8sAbnpGDxvc3B0U-60MFCgbQJUzUSEqq_Rkrs_X-4rI-YZGi1XXqkL_rqoE55LmXbmVfWMMtMMwM1HwkixLFtNgqLVmE35Hhs2rMOEPpQe7aRqi5x40sA8YAb5pAHQ1bb3tOS8XkScnMHuIMK3V8_t4c-siedt_LDxNOe0CVWS_ZMZc1Ldy2eeWUjkWTOUPAujNp9XIVfR"/>
+</div>
+<!-- Item Meta -->
+<div class="min-w-0 mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-tertiary-fixed truncate">Awakening Core</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Unlocks Weapon Rank V</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2 px-space-xs bg-tertiary-container text-on-tertiary-container rounded flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform font-bold">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">token</span>
+<span class="font-label-numeric text-label-numeric">200</span>
+<span class="font-label-tactical text-label-tactical uppercase ml-1">Unlock</span>
+</button>
+</div>
+<!-- Card 3: Void Summon Beacon Pack (5x) -->
+<div class="flex flex-col bg-surface-container rounded-lg p-space-sm shadow-sm relative overflow-hidden justify-between">
+<div class="absolute top-1.5 left-1.5 bg-error text-on-error px-1.5 py-0.5 rounded font-label-micro text-label-micro uppercase font-bold">
+        -10% OFF
+      </div>
+<!-- Card Visual -->
+<div class="w-full h-28 bg-surface-container-lowest rounded overflow-hidden my-space-xs relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Five crystalline anime summoning beacons emitting bright cyan beam pillars into a dark nebula sky, glowing neon runes, premium gacha artifacts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDidieMaJFleD5mOrqg2QEZGLdhqkGDA2f1plQKEgwQRkp60mS1enF9Z-byrPMcQDV7U3jlloMOGAFTjeF5vweanbGNt-9Ci3cfRdnNlgGxdG6mjh-vvbHRPQnP5R8FcEuuYksLoU5-DSLvRNuJMrgGNFnvCMKP8caMn60qKHxwYUDbtye6WSTR-xacvZQSXFD1EJAZXqjcSljU7j2cLNSZO6ad0cdT8O0aOapSuz-yLiCSeLJAFVtT"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 rounded text-secondary font-label-micro text-label-micro">
+          x5 Beacons
+        </div>
+</div>
+<!-- Item Meta -->
+<div class="min-w-0 mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Summon Pack</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Astral Warp</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2 px-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright rounded flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed">750</span>
+<span class="font-label-tactical text-label-tactical uppercase ml-1">Acquire</span>
+</button>
+</div>
+<!-- Card 4: Emergency Void Battery -->
+<div class="flex flex-col bg-surface-container rounded-lg p-space-sm shadow-sm relative overflow-hidden justify-between">
+<div class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded font-label-micro text-label-micro uppercase">
+        Instant
+      </div>
+<!-- Card Visual -->
+<div class="w-full h-28 bg-surface-container-lowest rounded overflow-hidden my-space-xs relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Sleek tactical sci-fi energy battery capsule filled with glowing electric cyan plasma fluids, metallic chassis, high voltage lightning arcing across chamber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6shKti1kD_GtP3aiz4I3RiLgZMXgOTqIZgEIcr5Shz06r1kx_nc7HnT9VgwMJZckzPLsRwaCm2RGB4DHLWldaDZKfZ3ITXP3A_15sTv_DABaV0tfYPwyUwVufv0UtKSXiIW2Rck2FYkEFWldigryeItYPpgaEHGnjcE85BSXsEWTjxfsYbUYqZuYKAWa8L6hBz-enqbflnbsAWlZbnxCgsdxZuOKMWTtkaQTYNVcLPxYznXwgc3F5"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 rounded text-secondary font-label-micro text-label-micro">
+          +100 EP
+        </div>
+</div>
+<!-- Item Meta -->
+<div class="min-w-0 mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Void Battery</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Full EP Restorative</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2 px-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright rounded flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed">60</span>
+<span class="font-label-tactical text-label-tactical uppercase ml-1">Charge</span>
+</button>
+</div>
+</div>
+<!-- Daily Supplies Quick Strip -->
+<div class="px-margin-mobile mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-1 h-3.5 bg-primary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide">Daily Requisitions</h3>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Refreshes 04:00 UTC</span>
+</div>
+<div class="px-margin-mobile flex flex-col gap-space-sm mb-space-xl">
+<!-- Free Daily Pack (Claimed State) -->
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between gap-space-sm opacity-60">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded bg-surface-container-lowest overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Tactical sci-fi supply crate with illuminated digital locks and cybernetic rations symbol, deep slate and violet lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCStgQuV0iwHmFXFtD3339mmHD-5lAzNzyhTk0fECCiIeAgMYmYhK7QWWuSyXg9yoe_jbVeJvthjpUJv-sgdtUUxDXyZA7MaSSOYnbsSnyAvXnrZbwcGFR_eE1g8Gi0BDnqgGPTwPeU92YXcGHe45m80rwgUqcJivqSn9ji7ZuhanSDhImRW5i46gsDjhXDrmPnUEn2XvjhcKqtpxSiBBZeN1oQPCqzaP24DuM2M0-LwB9J0QnB8Z8Y"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Daily Commander Ration</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Contains 50 Energy, 5,000 Gold</div>
+</div>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-highest rounded text-on-surface-variant font-label-tactical text-label-tactical uppercase flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Claimed</span>
+</div>
+</div>
+<!-- Tome of Mastery Row -->
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded bg-surface-container-lowest overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Ancient arcane cyber-grimoire floating with open pages of glowing stellar formulas, gold and dark blue particle magic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN7oqW6JH554dhlTRcKdIIwbpQyPFS5tv9LJtKug2YcKQed0hE6MvV00NYL6n5vaYkeeF_pb3PKSXkutlIvKwTHxR5q964-Wo8BCNw8tVopGg1F-oio2RLY6PtksjJJuqB_XxpPPChOI9Lt5q9K2rm5NJK_EEw8ekrrvEp8feA6yRCCZycDPQGP2qci6Y5Mw_qEkXU-SdzhFjP7DDqOebHVYVJUP6mu75PoPzreyr92aG-RyEQKffF"/>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Starlight Tome of Mastery</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">+10,000 Codex EXP Points</div>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-tertiary text-on-tertiary rounded font-label-tactical text-label-tactical uppercase flex-shrink-0 flex items-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="font-label-numeric text-label-numeric">25K</span>
+</button>
+</div>
+<!-- First-Time Gem Multiplier Banner -->
+<div class="p-space-sm bg-gradient-to-r from-surface-container to-surface-container-high rounded-lg flex items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">electric_bolt</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">First Deposit Bonus</span>
+<span class="bg-primary text-on-primary px-1.5 py-0.2 rounded font-label-micro text-label-micro font-bold">2X REWARD</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Receive double Astral Gems on any initial pack purchase</div>
+</div>
+</div>
+<button class="px-3 py-2 bg-secondary text-on-secondary rounded font-label-tactical text-label-tactical uppercase flex-shrink-0 shadow-sm active:scale-95 transition-transform">
+        View Packs
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Simple Countdown Timer Micro-Interaction
+  (function initCycleCountdown() {
+    let secondsLeft = 6 * 3600 + 42 * 60 + 15;
+    const timerElem = document.getElementById('cycleTimer');
+    if (!timerElem) return;
+
+    setInterval(() => {
+      if (secondsLeft > 0) {
+        secondsLeft--;
+        const h = Math.floor(secondsLeft / 3600);
+        const m = Math.floor((secondsLeft % 3600) / 60);
+        const s = secondsLeft % 60;
+        const pad = (n) => String(n).padStart(2, '0');
+        timerElem.textContent = `${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+      }
+    }, 1000);
+  })();
+</script></main></body></html>

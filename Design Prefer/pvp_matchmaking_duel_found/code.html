@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-primary bg-surface-container-high/60 rounded-lg border border-primary/20 active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Aetherium Rift Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase truncate max-w-[160px]">Live Tactical Duel</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-xl gap-space-lg select-none">
+<!-- Top Arena Badge & Rules Meta -->
+<div class="relative w-full rounded-xl bg-surface-container-high/80 p-space-md shadow-lg overflow-hidden backdrop-blur-md">
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-inner flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-micro text-label-micro text-secondary uppercase tracking-widest">Season IX Combat Arena</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Diamond III Ranked Clash</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-lowest/80 px-space-sm py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-numeric text-label-numeric text-primary">2,875 RP</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant/80">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">timer</span> Turn: 45s
+      </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">swords</span> Best of 1
+      </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">balance</span> Equalized Gear
+      </span>
+</div>
+</div>
+<!-- Cosmic Radar Search Visualizer -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest/90 p-space-lg flex flex-col items-center justify-center overflow-hidden shadow-2xl">
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container via-surface-container-lowest to-surface"></div>
+<!-- Rotating Dual Radar Rings -->
+<div class="relative w-44 h-44 my-space-md flex items-center justify-center">
+<!-- Outer Runic Ring -->
+<div class="absolute inset-0 rounded-full border-2 border-primary/20 animate-spin" style="animation-duration: 18s;"></div>
+<!-- Inner Pulse Core -->
+<div class="absolute w-32 h-32 rounded-full border border-secondary/40 animate-ping opacity-30" style="animation-duration: 2.4s;"></div>
+<!-- Reverse Rotating Gyro Ring -->
+<div class="absolute w-28 h-28 rounded-full border-2 border-dashed border-secondary/50 animate-spin" style="animation-direction: reverse; animation-duration: 9s;"></div>
+<!-- Center Emblem Icon -->
+<div class="relative z-10 w-16 h-16 rounded-full bg-surface-container-high/90 flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-3xl text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">radar</span>
+</div>
+<!-- Orbital Particle Blips -->
+<div class="absolute w-full h-full animate-spin" style="animation-duration: 5s;">
+<span class="absolute top-2 left-10 w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_10px_#4cd7f6]"></span>
+</div>
+<div class="absolute w-full h-full animate-spin" style="animation-duration: 7s; animation-direction: reverse;">
+<span class="absolute bottom-4 right-8 w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#ffb95f]"></span>
+</div>
+</div>
+<!-- Matchmaking Metrics -->
+<div class="text-center z-10">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high/80 mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">Global Node: JP-East-1</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Searching for Challenger...</h3>
+<p class="font-label-numeric text-label-numeric text-on-surface-variant mt-1">
+        Elapsed: <span class="text-primary" id="queue-timer">00:24</span> <span class="text-outline-variant">/</span> Avg: 00:35
+      </p>
+</div>
+</div>
+<!-- MATCH FOUND! High-Adrenaline Transition Banner -->
+<div class="relative w-full rounded-xl bg-surface-container-low p-space-md shadow-2xl overflow-hidden">
+<!-- Laser energy beams overlay -->
+<div class="absolute -top-10 left-1/4 w-1/2 h-44 bg-gradient-to-r from-secondary/15 via-primary-container/20 to-transparent rotate-12 blur-xl pointer-events-none"></div>
+<div class="absolute -bottom-8 right-1/4 w-1/2 h-36 bg-gradient-to-l from-tertiary/15 to-transparent -rotate-12 blur-lg pointer-events-none"></div>
+<!-- Header Status of Lock-in -->
+<div class="flex items-center justify-between mb-space-md relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-lg">bolt</span>
+<span class="font-headline-sm text-headline-sm text-secondary tracking-wider uppercase font-bold">Match Discovered</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/90 px-space-sm py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-tactical text-label-tactical text-secondary-fixed">24ms Ping</span>
+</div>
+</div>
+<!-- Faceoff Split Grid -->
+<div class="grid grid-cols-5 gap-space-xs items-center relative z-10">
+<!-- Player Profile Card (Col 1-2) -->
+<div class="col-span-2 flex flex-col items-center text-center p-space-sm rounded-lg bg-surface-container/90 relative shadow-md">
+<div class="absolute top-1.5 left-1.5 px-1 rounded bg-secondary/20 text-secondary font-label-micro text-label-micro">YOU</div>
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-secondary to-primary shadow-lg mb-space-xs">
+<img class="w-full h-full object-cover rounded-full" data-alt="Futuristic cyber anime male tactician avatar with glowing cyan visor, dark spiked hair, sharp violet tech collar, high-definition neon lighting style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC317rWJMwqyvhTRqSBnyjcWLvnwAfzkfXWaGiRpC28iqOmFOmNZtQ3MEdiMOx9JFZBBtPDJKW-bKLDBcvA19sZNUWRQprIZbAjnxg1IpaEdMDalbRj-AtnCQPZCLHpIAhxhR0mozrH_6l1PdU4oq9VGY-EsR4xaiSHohpNQ00UMNUCRqazRkB_Rf4rSbJIKzfvAimXOyxlEI0P8EqYyp6JMUU3dxjqpg8XjJ_RrwUBJnpyi4RrYl7l"/>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate w-full font-bold">Valen_V</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold">Lv. 42 • Diamond III</span>
+<div class="mt-space-sm w-full bg-surface-container-lowest/80 rounded p-1 text-left flex flex-col gap-0.5">
+<div class="flex justify-between items-center text-[10px] font-label-micro">
+<span class="text-on-surface-variant">Winrate</span>
+<span class="text-secondary font-bold">68.4%</span>
+</div>
+<div class="flex justify-between items-center text-[10px] font-label-micro">
+<span class="text-on-surface-variant">Vanguard</span>
+<span class="text-primary truncate max-w-[58px]">Astra V.</span>
+</div>
+</div>
+</div>
+<!-- Center Versus Core (Col 3) -->
+<div class="col-span-1 flex flex-col items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(255,185,95,0.35)] relative">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">swords</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-tertiary mt-1 tracking-widest font-black">VS</span>
+</div>
+<!-- Opponent Profile Card (Col 4-5) -->
+<div class="col-span-2 flex flex-col items-center text-center p-space-sm rounded-lg bg-surface-container/90 relative shadow-md">
+<div class="absolute top-1.5 right-1.5 px-1 rounded bg-tertiary/20 text-tertiary font-label-micro text-label-micro">RIVAL</div>
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-tertiary to-error shadow-lg mb-space-xs">
+<img class="w-full h-full object-cover rounded-full" data-alt="Mysterious dark fantasy female sorceress avatar with deep violet glowing eyes, obsidian ornate crown, cosmic rift background, anime splash art aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc1pnyc1Anb-BKnQAxwNajf-xbzD0R-DgWbkFTP4E_ZDKkobtNZGUGsc393CaXiPrDSY0YwWYvjkqbtBcHCsnbk-DjD4RboEUJRvSGsBwMON8A1qcp3SkNj0i2_i2RFynFFvTC89tt2R_8S4MoR4iHvC59sLepx127ZyK9fjKuHK9vWnsJZEonkAVrWtKgsZbFfcZmHl2xNlT-LiDri1nqzKazeSsbgpoiz-NYZdj7P5m4Uiywxe32"/>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate w-full font-bold">Kaelen_V</span>
+<span class="font-label-micro text-label-micro text-tertiary font-semibold">Lv. 45 • Diamond II</span>
+<div class="mt-space-sm w-full bg-surface-container-lowest/80 rounded p-1 text-left flex flex-col gap-0.5">
+<div class="flex justify-between items-center text-[10px] font-label-micro">
+<span class="text-on-surface-variant">Winrate</span>
+<span class="text-tertiary font-bold">71.0%</span>
+</div>
+<div class="flex justify-between items-center text-[10px] font-label-micro">
+<span class="text-on-surface-variant">Vanguard</span>
+<span class="text-tertiary truncate max-w-[58px]">Nyra U.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Match Locked Countdown Bar -->
+<div class="mt-space-md pt-space-xs relative z-10">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Commencing Combat...</span>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold" id="lock-countdown">3s</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary via-primary to-tertiary w-full transition-all duration-1000 ease-linear rounded-full" id="lock-bar"></div>
+</div>
+</div>
+</div>
+<!-- Tactical Hand Readiness Sneak-Peek -->
+<div class="rounded-xl bg-surface-container-low/70 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">style</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Prepared Opening Roster</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary">Deck: Aether Swarm</span>
+</div>
+<!-- Minimized Card Previews -->
+<div class="grid grid-cols-3 gap-space-sm pt-1">
+<div class="rounded-lg bg-surface-container p-2 flex flex-col gap-1 shadow relative overflow-hidden">
+<div class="w-full h-16 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Anime fantasy spell card art showing an astral dragon breathing blue starlight fire into an abyss" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRPMN0C99lW17mg9a8Z7BYIu5_EuMuDMwFFxScrDrb0WngStoCoNl1ePv12SosaB4I_plLyK2vyqLBGqbO4cGHGMW7ur_lph91vUYgFUChyD2TCNvSLd0T8gSK3cwNYeo61n7H4DVR6OA6DwoqAw_BGZOosxtU6UltsTFAOBo-udF9-o-lrou9GxriBNvjYiBdQOFDD1YmhXO-3FzwodVCyNIjCtWcfPgOU3_ecFTwnJCkZU_8lqJW"/>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Starlight Ray</span>
+<span class="font-label-numeric text-label-numeric text-secondary">3 AP</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container p-2 flex flex-col gap-1 shadow relative overflow-hidden">
+<div class="w-full h-16 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Anime mecha warrior sword strike cutting through dimensional rifts with purple spark explosions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO1u8rifyGWh5vcM7pLS5cy1cMbaPDn0bH29_v7ay0yIuR1zNlpD-tmik-I0Bs5mUhPZ5zplFYSM0lqaFk-5DJVRYigCraHntGLMuZm4JIvt1bzE0plAJZhr5B8PwrRnXkpSU7eAqFAoOybi1iLKSphk2dVhhTwKo8BTVzlZbTXe6XfniwKU3ps90VPHLqsw83_Cq1Eae9PlKTcc37J49LwRtyVedyTMPJ5fOjlCGD4B1t_agQyMYR"/>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Aero Cleave</span>
+<span class="font-label-numeric text-label-numeric text-primary">2 AP</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container p-2 flex flex-col gap-1 shadow relative overflow-hidden">
+<div class="w-full h-16 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Crystalline protective barrier shield hex spell radiating bright cyan defense runes in dark space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL1FgIawm3E2ZoyqZOARLkbAf5CstHBPyQSGVd899eAbnPCTWqpLAgE4s7tolftu4o0ZcNfVCTTM0CtKv6vP0x8oPDdkPUrh3FyeA7q-8k4T8nyGzIxGemH4cYyQ-QBwnbbLtbNK9rOrImuPu7TCRB6Qwfmo5UsI-nJCe6TK4cGX3sBTAuljLyEnvmjnG9G-hG3qvJsdrhatDtX-6dEfLuais0gr9yeQRheZJ5DnbTIQEzuGJ2Xz93"/>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Void Ward</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">1 AP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Row / Thumbs Zone Lockout Button -->
+<div class="w-full pt-space-xs">
+<button class="w-full h-12 rounded-xl bg-surface-container-highest/60 text-outline cursor-not-allowed flex items-center justify-center gap-space-xs shadow-inner" disabled="">
+<span class="material-symbols-outlined text-lg">lock</span>
+<span class="font-label-tactical text-label-tactical uppercase tracking-wider">Queue Locked • Duel Imminent</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for matchmaking timer & countdown simulation
+  (function() {
+    let seconds = 24;
+    const queueTimerEl = document.getElementById('queue-timer');
+    if (queueTimerEl) {
+      setInterval(() => {
+        seconds++;
+        const mins = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        queueTimerEl.textContent = `${mins}:${secs}`;
+      }, 1000);
+    }
+
+    let countdown = 3;
+    const countdownEl = document.getElementById('lock-countdown');
+    const lockBarEl = document.getElementById('lock-bar');
+    if (countdownEl && lockBarEl) {
+      const interval = setInterval(() => {
+        countdown--;
+        if (countdown >= 1) {
+          countdownEl.textContent = `${countdown}s`;
+          lockBarEl.style.width = `${(countdown / 3) * 100}%`;
+        } else {
+          countdownEl.textContent = 'Engaging!';
+          lockBarEl.style.width = '0%';
+          clearInterval(interval);
+        }
+      }, 1000);
+    }
+  })();
+</script></main></body></html>

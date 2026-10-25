@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-primary bg-surface-container-high/60 rounded-lg border border-primary/20 active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Aetherium Rift Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase truncate max-w-[160px]">Card Relic Detail</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Character Quick Bar & Utility Actions -->
+<div class="px-margin-mobile pt-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Astral Vanguard // Tank</span>
+<span class="inline-block w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-label-micro text-label-micro text-tertiary font-bold tracking-widest">SSR RELIC</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface truncate">Astra Veyron</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Cosmic Guardian of the Shattered Void</p>
+</div>
+<!-- Favorite & Share Tactical Buttons -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary active:scale-95 transition-all shadow-md" id="favorite-btn">
+<span class="material-symbols-outlined text-xl" id="star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+<!-- Centerpiece Collectible Card Showcase -->
+<div class="px-margin-mobile mt-space-md">
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest p-space-xs shadow-xl shadow-black/80">
+<!-- Glow & Ambiance Halos -->
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/20 blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/20 blur-3xl pointer-events-none rounded-full"></div>
+<!-- Outer Card Plaque -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-low p-space-xs">
+<!-- Card Art Viewport -->
+<div class="relative w-full h-80 rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-center transform scale-105 hover:scale-100 transition-transform duration-700" data-alt="Anime dark fantasy character Astra Veyron with cosmic celestial hair, wearing ornate dark violet armor with glowing crystalline cyan filigree, holding a massive orbital energy kite shield, floating against deep midnight astral nebula with violet and amber constellations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKZLeo-2pK4OutNQUWQhbzf0QN86--gRktOD5xxD62-Juf6XDrJyASFphUof7fwYzZhR196lC9lSoNwXR7gdwVl77pDiO2PJFFRLQ7Bh6GTjbUM_6j1DG2LLH_ZwLVRpRQHjwY2I4LHPHl7UqI3wlSsthRQ914k7W_o4SdgKB9ChZgt37MeGA89cv_Me_c-25PEvW291NvzFov5xE4BAQxTv00PbLL8ILxxFcl1ZdDpessGujDFgI2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Top Meta Inset (AP & Rarity) -->
+<div class="absolute top-space-sm left-space-sm right-space-sm flex items-center justify-between pointer-events-none">
+<!-- AP / Cost Node -->
+<div class="flex items-center gap-1 px-space-xs py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-lg">
+<span class="material-symbols-outlined text-secondary text-sm">shield</span>
+<span class="font-label-tactical text-label-tactical text-on-surface">DEF ANCHOR</span>
+</div>
+<!-- SSR Badge -->
+<div class="px-space-sm py-0.5 rounded-lg bg-tertiary-container/90 text-on-tertiary backdrop-blur-md shadow-md shadow-tertiary-container/40">
+<span class="font-display-hero-mobile text-[13px] tracking-widest font-black">SSR</span>
+</div>
+</div>
+<!-- Ascension Stars Badge -->
+<div class="absolute top-12 left-space-sm flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<!-- Bottom Card Overlay: Level & CP -->
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-on-surface-variant font-semibold">Ascension Cap</span>
+<div class="flex items-baseline gap-1">
+<span class="font-label-numeric text-label-numeric text-on-surface">LV 60</span>
+<span class="font-label-micro text-label-micro text-secondary font-bold">/ 60 [MAX]</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-on-surface-variant font-semibold">Combat Power</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-space-sm py-0.5 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-headline-sm text-headline-sm text-tertiary tracking-tight">14,250</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Faction Synergy Strip Inside Card Plate -->
+<div class="mt-space-xs bg-surface-container-high px-space-sm py-space-xs rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">all_inclusive</span>
+<span class="font-label-tactical text-label-tactical text-secondary">Astral Resonance (3/3)</span>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">+25% Shield • +10% Energy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Stat Hexagon & Numerical Telemetry -->
+<div class="px-margin-mobile mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">query_stats</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider">Combat Matrix</h3>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">NODE TIERS ACTIVE</span>
+</div>
+<!-- Telemetry Bento Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Radar Vector Chart Box -->
+<div class="relative bg-surface-container-low rounded-xl p-space-sm flex flex-col items-center justify-center min-h-[160px] shadow-sm">
+<span class="font-label-micro text-label-micro uppercase text-on-surface-variant tracking-wider absolute top-space-xs left-space-xs">Hexagon Sync</span>
+<!-- Inline SVG Stat Web -->
+<svg class="w-32 h-32" viewbox="0 0 140 140">
+<!-- Background Grid Rings -->
+<polygon fill="none" points="70,15 118,42 118,98 70,125 22,98 22,42" stroke="#272a34" stroke-width="1.5"></polygon>
+<polygon fill="none" points="70,35 98,51 98,89 70,105 42,89 42,51" stroke="#272a34" stroke-width="1"></polygon>
+<polygon fill="none" points="70,55 78,60 78,80 70,85 62,80 62,60" stroke="#272a34" stroke-width="0.75"></polygon>
+<!-- Spoke Lines -->
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="70" y1="70" y2="15"></line>
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="118" y1="70" y2="42"></line>
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="118" y1="70" y2="98"></line>
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="70" y1="70" y2="125"></line>
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="22" y1="70" y2="98"></line>
+<line stroke="#272a34" stroke-dasharray="2 2" stroke-width="1" x1="70" x2="22" y1="70" y2="42"></line>
+<!-- Astra's Polygon Stat Footprint (HP & DEF skewed high, ATK/SPD mid) -->
+<polygon fill="rgba(76, 215, 246, 0.22)" points="70,20 115,48 85,82 70,118 35,90 26,45" stroke="#4cd7f6" stroke-width="2"></polygon>
+<!-- Accent Vertices -->
+<circle cx="70" cy="20" fill="#d0bcff" r="3"></circle>
+<circle cx="115" cy="48" fill="#4cd7f6" r="3"></circle>
+<circle cx="85" cy="82" fill="#4cd7f6" r="2.5"></circle>
+<circle cx="70" cy="118" fill="#ffb95f" r="3"></circle>
+<circle cx="35" cy="90" fill="#4cd7f6" r="2.5"></circle>
+<circle cx="26" cy="45" fill="#d0bcff" r="3"></circle>
+</svg>
+<span class="font-label-micro text-label-micro text-secondary font-bold mt-1 tracking-wider">DEF FOCUS PROFILE</span>
+</div>
+<!-- Stat Badges Column -->
+<div class="flex flex-col gap-space-xs justify-between">
+<!-- HP -->
+<div class="bg-surface-container-low rounded-xl px-space-sm py-space-xs flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro text-on-surface-variant">HP VITALITY</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">18,450</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary font-label-tactical text-label-tactical font-bold">Rank S</span>
+</div>
+<!-- DEF -->
+<div class="bg-surface-container-low rounded-xl px-space-sm py-space-xs flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro text-on-surface-variant">ARMOR / DEF</span>
+<span class="font-label-numeric text-label-numeric text-secondary">2,480</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary/20 text-secondary font-label-tactical text-label-tactical font-black">Rank S+</span>
+</div>
+<!-- ATK & SPD Row -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col shadow-sm">
+<span class="font-label-micro text-label-micro text-on-surface-variant">ATK</span>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-numeric text-label-numeric text-on-surface">1,820</span>
+<span class="text-on-surface-variant font-label-micro text-label-micro font-bold">B</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col shadow-sm">
+<span class="font-label-micro text-label-micro text-on-surface-variant">SPD</span>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-numeric text-label-numeric text-on-surface">104</span>
+<span class="text-on-surface-variant font-label-micro text-label-micro font-bold">C</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Meta Row (CRIT RES & Shield Multiplier) -->
+<div class="bg-surface-container-low rounded-xl px-space-md py-space-xs flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">security</span>
+<span class="font-label-tactical text-label-tactical text-on-surface">Critical Resistance</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold">45.0%</span>
+</div>
+</div>
+<!-- Abilities & Combat Skill Kit -->
+<div class="px-margin-mobile mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">auto_fix_high</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider">Tactical Skill Kit</h3>
+</div>
+<span class="font-label-micro text-label-micro text-secondary font-semibold">ALL MAXED</span>
+</div>
+<!-- Passive Skill Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-lg">shield_moon</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-tactical text-label-tactical text-on-surface truncate">Cosmic Aegis</span>
+<span class="font-label-micro text-label-micro text-primary uppercase font-bold">Inherent Passive</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-micro text-label-micro">TRIGGER ON <40% HP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+        When allies fall below <span class="text-error font-semibold">40% HP</span>, Astra absorbs <span class="text-secondary font-semibold">50%</span> of incoming damage and reflects <span class="text-primary font-semibold">15%</span> back as pure Astral Energy.
+      </p>
+</div>
+<!-- Active Skill 1 Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-lg">radio_button_checked</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-tactical text-label-tactical text-on-surface truncate">Event Horizon Ward</span>
+<span class="font-label-micro text-label-micro text-secondary uppercase font-bold">Tactical Skill</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-secondary font-label-micro text-label-micro font-bold">2 EN</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-micro text-label-micro">CD 2T</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+        Projects a gravitational barrier granting all active squad members a <span class="text-secondary font-semibold">4,200 Shield</span> lasting for 2 turns. Barrier nullifies initial debuff application.
+      </p>
+</div>
+<!-- Ultimate Ability Card -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs overflow-hidden shadow-md">
+<!-- Glow Accent Overlay -->
+<div class="absolute -right-10 -bottom-10 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">cyclone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-tactical text-label-tactical text-primary truncate font-bold">Singularity Fortress</span>
+<span class="font-label-micro text-label-micro text-tertiary uppercase font-bold">Ultimate Burst</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-micro text-label-micro font-black">5 EN / FULL METER</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed mt-0.5">
+        Taunts all battlefield hostiles for 1 turn, elevates personal DEF by <span class="text-primary font-bold">+80%</span>, and unleashes a crushing <span class="text-tertiary font-bold">3,500 AoE burst</span> upon gravitational collapse.
+      </p>
+</div>
+</div>
+<!-- Astral Lore Archive -->
+<div class="px-margin-mobile mt-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+<span class="font-label-micro text-label-micro uppercase tracking-widest font-bold">Archive Codex // Entry #814</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+        “Born within the shattered rings of the Vor'Tesh rift, Astra swore to anchor the crumbling reality lines with her gravity-forged bulwark. None shall pass while the stars remember.”
+      </p>
+</div>
+</div>
+<!-- Bottom Interactive Tactical Action Dock -->
+<div class="mt-space-lg px-margin-mobile flex flex-col gap-space-xs">
+<!-- Primary CTA: Equip to Team -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform shadow-lg shadow-primary/20" id="equip-btn">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<span class="tracking-wider" id="equip-label">EQUIP TO TEAM 1</span>
+</button>
+<!-- Secondary Split CTAs -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Upgrade Runes CTA -->
+<button class="h-11 rounded-xl bg-surface-container-high text-on-surface font-label-tactical text-label-tactical flex items-center justify-center gap-space-xs active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base">widgets</span>
+<span>UPGRADE RUNES</span>
+</button>
+<!-- Ascension MAX Badge / Disabled -->
+<div class="h-11 rounded-xl bg-surface-container-lowest text-on-surface-variant/40 font-label-tactical text-label-tactical flex items-center justify-center gap-space-xs cursor-not-allowed">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>ASCENSION (MAX)</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tactical micro-interactions for favorite and equip buttons
+  const favoriteBtn = document.getElementById('favorite-btn');
+  const starIcon = document.getElementById('star-icon');
+  let isFavorite = true;
+
+  favoriteBtn.addEventListener('click', () => {
+    isFavorite = !isFavorite;
+    if (isFavorite) {
+      starIcon.style.fontVariationSettings = "'FILL' 1";
+      favoriteBtn.classList.add('text-tertiary');
+      favoriteBtn.classList.remove('text-on-surface-variant');
+    } else {
+      starIcon.style.fontVariationSettings = "'FILL' 0";
+      favoriteBtn.classList.remove('text-tertiary');
+      favoriteBtn.classList.add('text-on-surface-variant');
+    }
+  });
+
+  const equipBtn = document.getElementById('equip-btn');
+  const equipLabel = document.getElementById('equip-label');
+  let isEquipped = false;
+
+  equipBtn.addEventListener('click', () => {
+    isEquipped = !isEquipped;
+    if (isEquipped) {
+      equipLabel.textContent = 'ASSIGNED TO ACTIVE TEAM';
+      equipBtn.classList.remove('bg-primary', 'text-on-primary');
+      equipBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+    } else {
+      equipLabel.textContent = 'EQUIP TO TEAM 1';
+      equipBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+      equipBtn.classList.add('bg-primary', 'text-on-primary');
+    }
+  });
+</script></main></body></html>

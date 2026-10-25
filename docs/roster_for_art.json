@@ -1,0 +1,452 @@
+[
+  {
+    "id": "c_brine_ward",
+    "name": "Brine Ward",
+    "pitch": "Harbor sentry who braces the line.",
+    "lore": "Raised on rift-tide docks, Brine Ward makes shields from salt and oath.",
+    "rarity": "common",
+    "role": "tank",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "c_ember_pike",
+    "name": "Ember Pike",
+    "pitch": "Frontline spear with ember tips.",
+    "lore": "Forge apprentices temper spears in living coal vents along the Rift rim.",
+    "rarity": "common",
+    "role": "attacker",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "c_reed_chorus",
+    "name": "Reed Chorus",
+    "pitch": "Support who hums wounds shut.",
+    "lore": "Marsh cantors braid healing tones through hollow reeds.",
+    "rarity": "common",
+    "role": "support",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "c_night_pin",
+    "name": "Night Pin",
+    "pitch": "Quiet blade for soft targets.",
+    "lore": "Night Pin learned to end fights before lanterns are lit.",
+    "rarity": "common",
+    "role": "assassin",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "c_spark_novice",
+    "name": "Spark Novice",
+    "pitch": "Junior storm caster.",
+    "lore": "First-year Rift scholars still scorch their own cuffs.",
+    "rarity": "common",
+    "role": "mage",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "c_slate_clerk",
+    "name": "Slate Clerk",
+    "pitch": "Tactician with a chalkboard mind.",
+    "lore": "Orders are written once, then the battlefield obeys or breaks.",
+    "rarity": "common",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "c_dust_skipper",
+    "name": "Dust Skipper",
+    "pitch": "Skirmisher on glass dunes.",
+    "lore": "Skips so lightly the sand forgets footprints.",
+    "rarity": "common",
+    "role": "skirmisher",
+    "faction": "riftborn"
+  },
+  {
+    "id": "c_coil_apprentice",
+    "name": "Coil Apprentice",
+    "pitch": "Summoner student of echo pets.",
+    "lore": "Tiny rift coils answer when called politely.",
+    "rarity": "common",
+    "role": "summoner",
+    "faction": "riftborn"
+  },
+  {
+    "id": "c_iron_pail",
+    "name": "Iron Pail",
+    "pitch": "Stubborn bucket knight.",
+    "lore": "If it fits in a pail, Iron Pail will defend it.",
+    "rarity": "common",
+    "role": "tank",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "c_yellow_fuse",
+    "name": "Yellow Fuse",
+    "pitch": "DPS runner with lit temper.",
+    "lore": "Fuse burns short. So do patience and enemies.",
+    "rarity": "common",
+    "role": "attacker",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "c_balm_twin",
+    "name": "Balm Twin",
+    "pitch": "Field healer with shared pulse.",
+    "lore": "Two heartbeats, one cleanse kit.",
+    "rarity": "common",
+    "role": "support",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "c_cinder_scout",
+    "name": "Cinder Scout",
+    "pitch": "Fast eyes for the Covenant.",
+    "lore": "Maps forge roads before the smoke settles.",
+    "rarity": "common",
+    "role": "skirmisher",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "uc_mist_suture",
+    "name": "Mist Suture",
+    "pitch": "Field medic weaving fog into seals.",
+    "lore": "Mist Suture binds wounds with condensed Aetherium vapor.",
+    "rarity": "uncommon",
+    "role": "support",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "uc_glass_runner",
+    "name": "Glass Runner",
+    "pitch": "Courier who sprints rift glass roads.",
+    "lore": "Speed is survival when the road can cut you.",
+    "rarity": "uncommon",
+    "role": "skirmisher",
+    "faction": "riftborn"
+  },
+  {
+    "id": "uc_bulwark_lynn",
+    "name": "Bulwark Lynn",
+    "pitch": "Plate wall with patient eyes.",
+    "lore": "Lynn never rushes. The wall arrives when needed.",
+    "rarity": "uncommon",
+    "role": "tank",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "uc_hex_latch",
+    "name": "Hex Latch",
+    "pitch": "Controller mage of sticky runes.",
+    "lore": "Latch runes refuse to let go of ankles or plans.",
+    "rarity": "uncommon",
+    "role": "mage",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "uc_veil_knife",
+    "name": "Veil Knife",
+    "pitch": "Syndicate cutter under cloth.",
+    "lore": "If you see the veil, the cut already happened.",
+    "rarity": "uncommon",
+    "role": "assassin",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "uc_anvil_choir",
+    "name": "Anvil Choir",
+    "pitch": "Forge DPS with ringing cadence.",
+    "lore": "Hammers sing until steel answers.",
+    "rarity": "uncommon",
+    "role": "attacker",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "uc_map_wick",
+    "name": "Map Wick",
+    "pitch": "Strategist who burns bad plans.",
+    "lore": "Wrong routes go up in wick-smoke.",
+    "rarity": "uncommon",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "uc_echo_pupil",
+    "name": "Echo Pupil",
+    "pitch": "Summoner of thin doubles.",
+    "lore": "Pupils learn by copying the battlefield badly, then better.",
+    "rarity": "uncommon",
+    "role": "summoner",
+    "faction": "riftborn"
+  },
+  {
+    "id": "uc_gale_stitch",
+    "name": "Gale Stitch",
+    "pitch": "Support wind tailor.",
+    "lore": "Stitches torn banners and torn skin with the same thread.",
+    "rarity": "uncommon",
+    "role": "support",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "uc_rim_raider",
+    "name": "Rim Raider",
+    "pitch": "Skirmisher of the outer cliffs.",
+    "lore": "Raids the rim, then vanishes into updrafts.",
+    "rarity": "uncommon",
+    "role": "skirmisher",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "r_kairo_ren",
+    "name": "Kairo Ren",
+    "pitch": "Shadow infiltrator who marks openings.",
+    "lore": "Kairo Ren maps enemy habits like constellations, then erases the bright stars first.",
+    "rarity": "rare",
+    "role": "assassin",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "r_lyra_stormveil",
+    "name": "Lyra Stormveil",
+    "pitch": "Storm mage who shifts the field.",
+    "lore": "Lyra threads lightning through formation gaps until armies rearrange themselves.",
+    "rarity": "rare",
+    "role": "mage",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "r_bastion_ore",
+    "name": "Bastion Ore",
+    "pitch": "Living ore tank.",
+    "lore": "Ore that chose a creed and a posture.",
+    "rarity": "rare",
+    "role": "tank",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "r_sable_flute",
+    "name": "Sable Flute",
+    "pitch": "Support whose notes cleanse fear.",
+    "lore": "Fear leaves when the sable melody arrives.",
+    "rarity": "rare",
+    "role": "support",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "r_crimson_ledger",
+    "name": "Crimson Ledger",
+    "pitch": "Strategist who debts damage.",
+    "lore": "Every wound is an invoice. Collection is inevitable.",
+    "rarity": "rare",
+    "role": "strategist",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "r_quill_raze",
+    "name": "Quill Raze",
+    "pitch": "Attacker writing fire into steel.",
+    "lore": "Signatures burn hotter than seals.",
+    "rarity": "rare",
+    "role": "attacker",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "r_hop_mirage",
+    "name": "Hop Mirage",
+    "pitch": "Skirmisher of false footfalls.",
+    "lore": "You swing where they were. They are already gone.",
+    "rarity": "rare",
+    "role": "skirmisher",
+    "faction": "riftborn"
+  },
+  {
+    "id": "r_loom_wisp",
+    "name": "Loom Wisp",
+    "pitch": "Summoner weaving soft constructs.",
+    "lore": "Wisps hold swords until the loom says drop.",
+    "rarity": "rare",
+    "role": "summoner",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "sr_astra_veyron",
+    "name": "Astra Veyron",
+    "pitch": "Cosmic guardian of gravitational barriers.",
+    "lore": "Astra Veyron folds star mass into a tower shield that refuses to fall.",
+    "rarity": "superRare",
+    "role": "tank",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "sr_quill_tactician",
+    "name": "Quill Tactician",
+    "pitch": "Planner who rewrites turn pressure.",
+    "lore": "Ink from rift-squid records futures that never quite happen.",
+    "rarity": "superRare",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "sr_obsidian_mire",
+    "name": "Obsidian Mire",
+    "pitch": "Mage of slow drowning dark.",
+    "lore": "Mire does not splash. It claims.",
+    "rarity": "superRare",
+    "role": "mage",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "sr_gilded_saw",
+    "name": "Gilded Saw",
+    "pitch": "Forge assassin with ornate cruelty.",
+    "lore": "Beauty is a blade if the angle is honest.",
+    "rarity": "superRare",
+    "role": "assassin",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "sr_haven_bell",
+    "name": "Haven Bell",
+    "pitch": "Support whose peal restores lines.",
+    "lore": "One peal, and broken ranks remember they are an army.",
+    "rarity": "superRare",
+    "role": "support",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "sr_zephyr_fang",
+    "name": "Zephyr Fang",
+    "pitch": "Skirmisher tooth of the high wind.",
+    "lore": "Fang rides the gale until armor forgets where front is.",
+    "rarity": "superRare",
+    "role": "skirmisher",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "e_mirror_host",
+    "name": "Mirror Host",
+    "pitch": "Specialist who borrows battlefield rules.",
+    "lore": "The Mirror Host invites echoes to fight in borrowed silhouettes.",
+    "rarity": "epic",
+    "role": "summoner",
+    "faction": "riftborn"
+  },
+  {
+    "id": "e_iron_psalm",
+    "name": "Iron Psalm",
+    "pitch": "Tank choir of forged faith.",
+    "lore": "Psalm plates hum until siege engines reconsider.",
+    "rarity": "epic",
+    "role": "tank",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "e_violet_auditor",
+    "name": "Violet Auditor",
+    "pitch": "Strategist who audits destinies.",
+    "lore": "If the timeline is crooked, Violet stamps it void.",
+    "rarity": "epic",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "e_thorn_cantor",
+    "name": "Thorn Cantor",
+    "pitch": "Mage singer of bleeding vines.",
+    "lore": "Notes sprout thorns. Thorns sprout consequences.",
+    "rarity": "epic",
+    "role": "mage",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "e_black_relay",
+    "name": "Black Relay",
+    "pitch": "Assassin courier of final messages.",
+    "lore": "Delivery confirmed means someone stopped answering.",
+    "rarity": "epic",
+    "role": "assassin",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "l_sol_archon",
+    "name": "Sol Archon",
+    "pitch": "Legendary solar spear of the Vanguard.",
+    "lore": "When the Rift dimmed, Sol Archon lit a spear from a dying star and kept walking.",
+    "rarity": "legendary",
+    "role": "attacker",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "l_mare_absolver",
+    "name": "Mare Absolver",
+    "pitch": "Legendary tide healer.",
+    "lore": "Absolution arrives as a tide that refuses to leave anyone drowned.",
+    "rarity": "legendary",
+    "role": "support",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "l_crown_of_cinders",
+    "name": "Crown of Cinders",
+    "pitch": "Legendary forge sovereign blade.",
+    "lore": "A crown that cuts, because crowns should earn their weight.",
+    "rarity": "legendary",
+    "role": "attacker",
+    "faction": "forgeCovenant"
+  },
+  {
+    "id": "l_silent_congress",
+    "name": "Silent Congress",
+    "pitch": "Legendary strategist parliament of one.",
+    "lore": "Motions pass without voices. Outcomes still shout.",
+    "rarity": "legendary",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "m_null_seraph",
+    "name": "Null Seraph",
+    "pitch": "Mythic anomaly of quiet erasure.",
+    "lore": "Null Seraph does not roar. Space simply forgets what stood there.",
+    "rarity": "mythic",
+    "role": "assassin",
+    "faction": "voidSyndicate"
+  },
+  {
+    "id": "m_aurora_lattice",
+    "name": "Aurora Lattice",
+    "pitch": "Mythic mage of sky geometry.",
+    "lore": "Lattices of dawn rewrite where storms are allowed to land.",
+    "rarity": "mythic",
+    "role": "mage",
+    "faction": "stormCourt"
+  },
+  {
+    "id": "m_warden_infinite",
+    "name": "Warden Infinite",
+    "pitch": "Mythic endless gate tank.",
+    "lore": "The gate does not close. It simply chooses who passes.",
+    "rarity": "mythic",
+    "role": "tank",
+    "faction": "aetherVanguard"
+  },
+  {
+    "id": "s_aether_sovereign",
+    "name": "Aether Sovereign",
+    "pitch": "Supreme apex of Battle Card Supreme.",
+    "lore": "A throne of living Rift law. Still counterable. Never a free win.",
+    "rarity": "supreme",
+    "role": "strategist",
+    "faction": "eclipseOrder"
+  },
+  {
+    "id": "s_first_fracture",
+    "name": "First Fracture",
+    "pitch": "Supreme origin wound given a name.",
+    "lore": "The first crack in reality learned manners, then war.",
+    "rarity": "supreme",
+    "role": "summoner",
+    "faction": "riftborn"
+  }
+]

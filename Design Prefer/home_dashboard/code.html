@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0 flex-shrink-0"><img alt="Aetherium Rift Emblem" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none truncate">Aetherium Rift</span><span class="font-label-micro text-label-micro text-secondary font-semibold uppercase tracking-wider mt-0.5">Lv.42 Commander</span></div></div><div class="flex items-center gap-space-xs overflow-x-hidden py-1"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20 shadow-[0_0_8px_rgba(76,215,246,0.15)]"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-tertiary/20 shadow-[0_0_8px_rgba(255,185,95,0.15)]"><span class="material-symbols-outlined text-tertiary text-[16px]">monetization_on</span><span class="font-label-tactical text-label-tactical text-on-surface">84.2K</span></div><div class="hidden xs:flex flex-col items-center bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-primary/20"><div class="flex items-center gap-0.5"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span><span class="font-label-tactical text-label-tactical text-on-surface">88/120</span></div><span class="font-label-micro text-label-micro text-on-surface-variant leading-none">04:12</span></div></div><div class="relative flex-shrink-0 ml-1"><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary to-secondary shadow-[0_0_10px_rgba(208,188,255,0.4)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div><span class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary font-label-micro text-label-micro px-1 rounded-sm uppercase tracking-tighter font-extrabold">VIP4</span><span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest animate-pulse"></span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Void Marquee Ticker -->
+<div class="px-margin-mobile">
+<div class="bg-surface-container-high text-on-surface rounded-lg px-space-md py-space-xs flex items-center justify-between shadow-sm overflow-hidden">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-sm animate-pulse" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase text-[10px]">EVENT</span>
+<div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="text-on-surface font-semibold">Void Incursion Ch. IV:</span> The Celestial Fracture is live now!
+        </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 ml-1">chevron_right</span>
+</div>
+</div>
+<!-- Featured Character Dynamic Relic Showcase (Astra Veyron) -->
+<div class="px-margin-mobile">
+<div class="relative bg-surface-container rounded-xl overflow-hidden shadow-xl shadow-surface-container-lowest/80 p-space-md group">
+<!-- Ambient Void Astral Backdrop -->
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest via-surface-container-low to-primary-container/20 pointer-events-none"></div>
+<!-- Character Artwork Frame & Glow -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden flex items-end p-space-md bg-surface-container-lowest shadow-inner">
+<img class="absolute inset-0 w-full h-full object-cover object-top filter brightness-95 contrast-105" data-alt="Digital dark anime style illustration of Astra Veyron, a celestial cosmic guardian tank heroine with glowing crystalline armor, long luminous lilac hair, holding a titanic void-forged tower shield infused with star constellations and radiant purple energy sparks, cosmic nebula background in deep midnight violet and cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoZ9NpxGg8oDscdV2cAFXek0MfdhietObOVhSiYuj2VUHqvst9ZivBBiayf54uELYGIpohx3fYM3Pq_x8De7JcoHDynB6l5YYV75YNpt40xDk4Mgn1ZYeOdzFQ6-9N4yYU4Avhp1pDnNsZ4tMDwgOCHV9SB_5pcleMniulQGtB6f127SW3miSxGeyfetC8eNmSknb03rVMVjpeWN5bC0OWXc0zckbRdPIesApAYvMNs_Z7Iqxal8Rm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<!-- Rarity Badge & Class Seal Top Right -->
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1.5">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-micro text-label-micro text-tertiary tracking-widest uppercase">TANK</span>
+</div>
+<div class="bg-gradient-to-r from-tertiary via-tertiary-fixed-dim to-primary px-2.5 py-0.5 rounded-full shadow-lg shadow-tertiary/20">
+<span class="font-headline-sm text-[11px] leading-tight text-on-tertiary font-bold tracking-wider">SSR</span>
+</div>
+</div>
+<!-- Featured Card Overlay Stats & Name -->
+<div class="relative z-10 w-full flex items-end justify-between">
+<div class="space-y-0.5 min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-sm shadow-secondary"></span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Aether Vanguard</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-display-hero truncate drop-shadow-sm">Astra Veyron</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+              Cosmic Guardian <span class="text-outline">·</span>
+<span class="font-label-tactical text-label-tactical text-primary font-bold">14,250 PWR</span>
+</p>
+</div>
+<!-- Inspect Card Tactile Trigger -->
+<button class="flex-shrink-0 bg-surface-container-high/90 hover:bg-surface-bright active:scale-95 text-primary px-3 py-2 rounded-lg flex items-center gap-1 shadow-md transition-all duration-150 backdrop-blur-sm" id="inspectCardBtn">
+<span class="font-label-tactical text-label-tactical uppercase">Inspect</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Quick Micro Telemetry Pill -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-tactical text-[11px] text-on-surface">32.4K</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-tactical text-[11px] text-on-surface">1,890</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-tertiary" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+<span class="font-label-tactical text-[11px] text-on-surface">Cost 4</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="font-label-micro text-label-micro uppercase tracking-wider">Aura: Aegis Nebula</span>
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Apex Action Button: ENTER COMBAT -->
+<div class="px-margin-mobile">
+<div class="relative group">
+<!-- Glow Underlay -->
+<div class="absolute -inset-0.5 bg-gradient-to-r from-inverse-primary via-primary-container to-secondary rounded-xl blur-sm opacity-75 group-hover:opacity-100 transition duration-300"></div>
+<button class="relative w-full bg-surface-container-lowest hover:bg-surface-container-low active:scale-[0.98] transition-transform duration-150 rounded-xl px-space-lg py-3.5 flex items-center justify-between shadow-2xl" id="enterBattleBtn">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-gradient-to-br from-primary-container to-inverse-primary flex items-center justify-center text-on-primary-fixed shadow-md shadow-primary/30 flex-shrink-0">
+<span class="material-symbols-outlined text-3xl font-bold" style="font-variation-settings: 'FILL' 1;">swords</span>
+</div>
+<div class="flex flex-col text-left min-w-0">
+<span class="font-label-micro text-label-micro text-secondary font-bold tracking-widest uppercase">Ranked Season IX</span>
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight font-display-hero uppercase leading-tight">ENTER COMBAT</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-xs" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-tactical text-label-tactical text-on-surface">Diamond III</span>
+<span class="text-outline-variant text-[10px]">/</span>
+<span class="font-label-tactical text-label-tactical text-secondary">2,840 RP</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined text-xl">play_arrow</span>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant mt-1">Match ~4s</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Quick Navigation Grid (2x2 Bento Matrix) -->
+<div class="px-margin-mobile space-y-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-tactical text-label-tactical text-on-surface-variant uppercase tracking-wider">Tactical Command Hub</span>
+<span class="font-label-micro text-label-micro text-outline uppercase">4 Modules Online</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Tile 1: Card Vault -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md active:scale-95 transition-transform duration-150 cursor-pointer group">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">style</span>
+</div>
+<span class="bg-primary/20 text-primary font-label-micro text-label-micro px-1.5 py-0.5 rounded-full font-bold">+4 NEW</span>
+</div>
+<div class="mt-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-display-hero">Card Vault</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">48 / 120 Owned</p>
+</div>
+</div>
+<!-- Tile 2: Tactical Squad -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md active:scale-95 transition-transform duration-150 cursor-pointer group">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<span class="bg-secondary-container/20 text-secondary font-label-micro text-label-micro px-1.5 py-0.5 rounded-full font-bold">DECK 1</span>
+</div>
+<div class="mt-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-display-hero">Squad Formation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">42,800 Total PWR</p>
+</div>
+</div>
+<!-- Tile 3: Void Portal Summon (Banner rate-up) -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md active:scale-95 transition-transform duration-150 cursor-pointer relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">cyclone</span>
+</div>
+<div class="flex items-center gap-0.5 bg-tertiary/20 text-tertiary font-label-micro text-label-micro px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[10px]">timer</span>
+<span>18h 42m</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-1">
+<span class="font-label-micro text-label-micro text-tertiary uppercase font-bold">Rate Up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-display-hero truncate">Eclipse Arcanist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Void Portal Summon</p>
+</div>
+</div>
+<!-- Tile 4: Rift Trial Quests -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md active:scale-95 transition-transform duration-150 cursor-pointer group">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-micro text-label-micro px-1.5 py-0.5 rounded-full font-bold animate-pulse">REWARD</span>
+</div>
+<div class="mt-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-display-hero">Rift Trials</h3>
+<span class="font-label-tactical text-label-tactical text-secondary">3/5</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Claim Cosmic Relic</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Rift Pass & Daily Progression Segment -->
+<div class="px-margin-mobile">
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Aether Pass</span>
+<span class="font-label-micro text-label-micro bg-tertiary-container/40 text-tertiary px-1.5 rounded uppercase font-bold">Season 4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lv. 28 / 50 · 1,420 XP to Lv. 29</p>
+</div>
+</div>
+<button class="bg-tertiary hover:bg-tertiary-fixed text-on-tertiary px-3 py-1.5 rounded-lg active:scale-95 transition-transform flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">redeem</span>
+<span class="font-label-tactical text-label-tactical uppercase">Claim (2)</span>
+</button>
+</div>
+<!-- Segmented Bar Indicator -->
+<div class="space-y-1">
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-gradient-to-r from-primary via-secondary to-tertiary h-full rounded-full" style="width: 56%;"></div>
+</div>
+<div class="flex justify-between items-center text-outline text-[10px] font-label-micro">
+<span>Tier 28: 150x Void Shards</span>
+<span class="text-secondary font-bold">Tier 30: Mythic Sigil</span>
+<span>Tier 50: Astra Skin</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Combat Telemetry Mini-Widget -->
+<div class="px-margin-mobile">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-xs">history</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-outline">Last Combat Record</span>
+</div>
+<span class="font-label-micro text-label-micro text-outline-variant">14m ago</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded-md bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="font-label-tactical text-xs font-black">VICT</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">vs ShadowReaper99</span>
+<span class="font-label-micro text-[10px] text-outline">Diamond IV</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Turn 7 Turnabout Burst</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-tactical text-label-tactical text-secondary font-bold">+32 RP</span>
+<span class="font-label-micro text-[10px] text-tertiary">Streak x3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tactile Interactive Detail Dialog (Inspect Character Modal) -->
+<div class="hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-space-md" id="characterModal">
+<div class="w-full max-w-sm bg-surface-container rounded-2xl p-space-lg shadow-2xl space-y-4 transform transition-all animate-in fade-in slide-in-from-bottom-6">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="bg-tertiary/20 text-tertiary font-label-micro text-label-micro px-2 py-0.5 rounded font-bold">SSR DEFENDER</span>
+<span class="font-label-micro text-label-micro text-secondary uppercase">Astral Element</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" id="closeModalBtn">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<div class="text-left space-y-1">
+<h3 class="font-headline-lg text-headline-lg text-primary">Astra Veyron</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          "The stars do not weep for the fallen; they forge them into bastions of the void."
+        </p>
+</div>
+<div class="space-y-2 bg-surface-container-high rounded-xl p-space-md">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Signature Ability</span>
+<span class="text-secondary font-bold">Celestial Bulwark III</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Deploys an invulnerable stellar shield for 2 turns and redirects 60% of team damage to astral reserves.
+        </p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-surface-container-highest hover:bg-surface-bright text-on-surface py-2.5 rounded-lg font-label-tactical text-label-tactical uppercase" id="upgradeBtn">
+          Upgrade (Lv. 64)
+        </button>
+<button class="flex-1 bg-primary hover:bg-primary-fixed-dim text-on-primary py-2.5 rounded-lg font-label-tactical text-label-tactical uppercase font-bold shadow-md" id="equipHeroBtn">
+          Assign Leader
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tactical micro-interactions for CCG Home Screen
+  (function() {
+    const inspectBtn = document.getElementById('inspectCardBtn');
+    const modal = document.getElementById('characterModal');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const enterBattleBtn = document.getElementById('enterBattleBtn');
+    const equipHeroBtn = document.getElementById('equipHeroBtn');
+
+    if (inspectBtn && modal) {
+      inspectBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+      });
+    }
+
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    }
+
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    }
+
+    if (enterBattleBtn) {
+      enterBattleBtn.addEventListener('click', () => {
+        // Haptic feedback illusion
+        enterBattleBtn.classList.add('scale-95');
+        setTimeout(() => {
+          enterBattleBtn.classList.remove('scale-95');
+          const battleLink = document.querySelector('nav a[data-path="battle"]');
+          if (battleLink) {
+            battleLink.click();
+          }
+        }, 120);
+      });
+    }
+
+    if (equipHeroBtn && modal) {
+      equipHeroBtn.addEventListener('click', () => {
+        equipHeroBtn.textContent = 'ASSIGNED!';
+        equipHeroBtn.classList.replace('bg-primary', 'bg-secondary');
+        equipHeroBtn.classList.replace('text-on-primary', 'text-on-secondary');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          equipHeroBtn.textContent = 'Assign Leader';
+          equipHeroBtn.classList.replace('bg-secondary', 'bg-primary');
+          equipHeroBtn.classList.replace('text-on-secondary', 'text-on-primary');
+        }, 600);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-8px_24px_rgba(160,120,255,0.12)]" data-active-classes="text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.7))]"><div class="flex items-center justify-around h-20 px-space-xs relative"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-all duration-200 active:scale-95 text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.7))]" data-path="home" href="#"><span class="material-symbols-outlined text-2xl">fort</span><span class="font-label-micro text-label-micro mt-1 uppercase">Home</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="collection" href="#"><span class="absolute top-0 right-1 px-1 bg-secondary-container text-on-secondary-container font-label-micro text-[8px] rounded-full font-bold shadow-sm">48/120</span><span class="material-symbols-outlined text-2xl">style</span><span class="font-label-micro text-label-micro mt-1 uppercase">Collection</span></a><div class="relative -top-3 flex flex-col items-center justify-center"><a class="w-14 h-14 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary flex items-center justify-center text-on-primary-fixed shadow-[0_0_20px_rgba(160,120,255,0.6)] transform rotate-45 border-2 border-primary active:scale-90 transition-transform duration-150" data-path="battle" href="#"><span class="material-symbols-outlined text-3xl transform -rotate-45 text-surface-container-lowest font-black">swords</span></a><span class="font-label-tactical text-label-tactical text-primary font-bold tracking-wider uppercase mt-1 drop-shadow-[0_0_6px_rgba(208,188,255,0.8)]">Battle</span></div><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="team" href="#"><span class="material-symbols-outlined text-2xl">groups_2</span><span class="font-label-micro text-label-micro mt-1 uppercase">Team</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="commander-profile" href="#"><span class="material-symbols-outlined text-2xl">shield_person</span><span class="font-label-micro text-label-micro mt-1 uppercase">Profile</span></a></div></nav></body></html>

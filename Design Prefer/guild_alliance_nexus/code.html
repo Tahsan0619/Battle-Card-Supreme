@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-primary bg-surface-container-high/60 rounded-lg border border-primary/20 active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Aetherium Rift Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase truncate max-w-[160px]">Live Tactical Duel</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface pb-10">
+<!-- Nexus Hero Banner: Astral Knights Guild Header -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest px-margin-mobile pt-space-lg pb-space-xl">
+<!-- Subtle Ambient Energy Gradient -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/10 via-transparent to-surface-container-lowest pointer-events-none"></div>
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Top Crest & Identification Tier -->
+<div class="flex items-center gap-space-md">
+<!-- Emblem Box -->
+<div class="relative w-16 h-16 flex-shrink-0 rounded-xl bg-surface-container-high p-1 shadow-md">
+<img class="w-full h-full object-cover rounded-lg" data-alt="High fantasy anime emblem featuring a radiant glowing cosmic violet blade crossing dual cyan void crescent blades on an obsidian shield, glowing stellar runes, prestige game clan crest style, highly detailed digital painting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr0gz4k8VgPyS-HSvS9HogVjg-hCUnyswUcL6Kb_Crf8me03uetXDUBh0kQJBZna_zfY1MzrS7XsR1be5EDgpdwVHapH1BDEQBL789hVsLV2J0w-7I8MD5GWUEPkbcKnZ5rqA3uoobsH-VaRm3KjOzm1FJmha12GQuHXqKwaXR1CYAZ5C-xAfp0tVkWPS9albQEHWCCu1sLG5FZMbOLjPuY3nRCGc90rI5-EQoStBao2Xkh-CpiGCy"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary px-space-xs py-0.5 rounded-full flex items-center shadow-sm">
+<span class="font-label-micro text-label-micro uppercase font-bold tracking-wider">Lv.8</span>
+</div>
+</div>
+<!-- Name & Master Info -->
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Astral Knights</h2>
+<span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>GM:</span>
+<span class="text-primary font-semibold truncate">Valen_Vanguard</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary font-label-tactical text-label-tactical">Top 2%</span>
+</div>
+<!-- Quick Status Badges -->
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="bg-surface-container-high px-space-xs py-0.5 rounded text-secondary font-label-micro text-label-micro uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">group</span> 28/30
+            </span>
+<span class="bg-surface-container-high px-space-xs py-0.5 rounded text-tertiary font-label-micro text-label-micro uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">military_tech</span> S-Rank Nexus
+            </span>
+</div>
+</div>
+</div>
+<!-- Weekly Guild Activity Progression -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center justify-between font-label-tactical text-label-tactical">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">bolt</span>
+            Alliance EXP Cycle
+          </span>
+<span class="text-on-surface font-label-numeric text-label-numeric">
+<span class="text-primary">24,500</span> / 30,000
+          </span>
+</div>
+<!-- Progress Track -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden relative">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 81.6%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-micro text-label-micro">
+<span>Resets in: 2d 18h</span>
+<span class="text-secondary">+500 Gems at Tier Completion</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Functional Hub Modules -->
+<div class="px-margin-mobile flex flex-col gap-space-lg mt-space-md">
+<!-- 1. Guild Raid: Malakor the World-Render -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wide">Guild Cataclysm Raid</h3>
+</div>
+<span class="bg-error/20 text-error font-label-micro text-label-micro px-space-xs py-0.5 rounded font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span> 2d 14h Left
+        </span>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-md">
+<!-- Raid Boss Art Scrim Card -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Monolithic colossal dark void demon king Malakor the World-Render with colossal obsidian horns, glowing molten crimson cracks along armor, breathing abyssal cosmic plasma, dramatic anime cinematic battlefield background, ultra high fidelity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC78kuX-MkPF0M1Thrf348zLH25QAOCkz8U8wDgwWjJihqXOCCh1lLLohixzf0bx6IA8wUu1_C6JDr_PjeMf_H4EE3nC4stF7vNCSZ1nFFquPay_KHE9Pt1UJPZo73W9gHkkViypqIteGC2cuhmCF-pQa5PaHCLtZZfHTnoboh2darzE90hY574Subztzmc9qdiLc1eeSW2tazsuSAmo-bs7s17tIrhLeJsEobiBAT1j8yWBxojtGnI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro text-error uppercase tracking-wider font-bold">Cataclysm Phase II</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight drop-shadow-md">Malakor, World-Render</h4>
+</div>
+<div class="bg-surface-container-lowest/90 px-space-xs py-1 rounded text-right">
+<div class="font-label-micro text-label-micro text-on-surface-variant">Rank Reward</div>
+<div class="font-label-tactical text-label-tactical text-tertiary flex items-center gap-0.5 font-bold">
+<span class="material-symbols-outlined text-[14px]">social_leaderboard</span> Tier I SSR
+              </div>
+</div>
+</div>
+</div>
+<!-- Boss Health & Assault Status -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-tactical text-label-tactical">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-error text-[14px]">swords</span> Global HP Remaining
+            </span>
+<span class="text-error font-label-numeric text-label-numeric font-bold">42.8% <span class="text-on-surface-variant text-body-sm font-normal">/ 1.2B</span></span>
+</div>
+<!-- Segmented Boss HP Bar -->
+<div class="w-full h-2.5 rounded-full bg-surface-container-highest overflow-hidden relative p-[1px]">
+<div class="h-full bg-gradient-to-r from-error to-tertiary-fixed-dim rounded-full" style="width: 42.8%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-micro text-label-micro">
+<span>Daily Attempts: <strong class="text-secondary font-label-numeric text-label-numeric">2 / 3</strong></span>
+<span>Guild Contribution: <strong class="text-primary font-label-numeric text-label-numeric">Top 3</strong></span>
+</div>
+</div>
+<!-- Action Row -->
+<button class="w-full bg-primary-container text-on-primary py-space-sm rounded-lg font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-transform" id="assaultBtn">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+<span>Assault Raid Boss</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- 2. Daily Alliance Check-in & Donations -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wide">Daily Check-In &amp; Sigils</h3>
+</div>
+<span class="text-primary font-label-tactical text-label-tactical">22/28 Checked In</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<!-- Milestone Chest Claim Strip -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-micro text-label-micro uppercase text-on-surface-variant font-bold tracking-wider">
+<span>Alliance Milestone Tiers</span>
+<span class="text-secondary">Progress: 22</span>
+</div>
+<!-- Chest nodes -->
+<div class="relative py-2 flex items-center justify-between">
+<div class="absolute left-4 right-4 h-1 bg-surface-container-highest -z-0"></div>
+<div class="absolute left-4 h-1 bg-secondary -z-0" style="width: 75%;"></div>
+<!-- Tier 1: 10 Checkins (Claimed) -->
+<div class="relative z-10 flex flex-col items-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">10 (Claimed)</span>
+</div>
+<!-- Tier 2: 20 Checkins (Claimable!) -->
+<div class="relative z-10 flex flex-col items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center animate-bounce shadow-md" title="Claim Tier 2 Chest">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+</button>
+<span class="font-label-micro text-label-micro text-secondary font-bold">20 [CLAIM]</span>
+</div>
+<!-- Tier 3: 28 Checkins (Locked) -->
+<div class="relative z-10 flex flex-col items-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-outline shadow-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+<span class="font-label-micro text-label-micro text-outline">28 (Locked)</span>
+</div>
+</div>
+</div>
+<!-- 3 Donation Options Grid -->
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<!-- Tier 1: Gold -->
+<div class="bg-surface-container p-space-xs rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[22px]">payments</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Tithe</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">20,000 Gold</span>
+<button class="w-full mt-1 bg-surface-container-high hover:bg-surface-bright text-on-surface py-1 rounded font-label-micro text-label-micro font-bold uppercase tracking-wider">
+              Donate
+            </button>
+</div>
+<!-- Tier 2: Starlight Shards -->
+<div class="bg-surface-container p-space-xs rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Shards</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">50 Starlight</span>
+<button class="w-full mt-1 bg-secondary text-on-secondary-fixed py-1 rounded font-label-micro text-label-micro font-bold uppercase tracking-wider">
+              Offer
+            </button>
+</div>
+<!-- Tier 3: Astral Gems -->
+<div class="bg-surface-container p-space-xs rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-primary text-[22px]">diamond</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Astral</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">100 Gems</span>
+<button class="w-full mt-1 bg-surface-container-high hover:bg-surface-bright text-primary py-1 rounded font-label-micro text-label-micro font-bold uppercase tracking-wider">
+              Consecrate
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Guild Tech / Runic Tree Passive Buffs -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">account_tree</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wide">Runic Tech Nodes</h3>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Active Passives</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm shadow-sm">
+<!-- Buff 1 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Void Affinity Mastery</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affects all squad members</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold bg-surface-container-high px-space-xs py-0.5 rounded">+8% Void DMG</span>
+</div>
+<!-- Buff 2 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Bastion Resilience</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Global survival augment</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-primary font-bold bg-surface-container-high px-space-xs py-0.5 rounded">+10% Max HP</span>
+</div>
+<!-- Buff 3 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">monetization_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">Tribute Multiplier</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Duel &amp; quest bonus bounty</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold bg-surface-container-high px-space-xs py-0.5 rounded">+5% Gold Gain</span>
+</div>
+</div>
+</section>
+<!-- 4. Member Roster & Activity Log -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wide">Roster Preview</h3>
+</div>
+<button class="font-label-tactical text-label-tactical text-primary flex items-center gap-0.5">
+<span>View All (28)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-space-xs shadow-sm">
+<!-- Member Item 1 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dark anime character avatar with violet spiky hair and cybernetic ocular implant, focused tactical gaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyyixd3vFSZJUecjc7ndyiVKmI6QXTdCCB_UdFuVAXNUwgMQrxjqGIbUxlGHMzPu6ZRidQPwTGr4uCRQI6IkenZJynS0n6GqgRz57g7m9mY0-iW4Cs-y0OZFgr_DLUAUjZwEnowcrUuCnn9M8SiPpj26g1qr3th8Q6iuITLfTduOVyGPXbmD6Gg1CO17hmqszz77ZiqX4-gFeQjV0mGCXok6l5WATZ7QKYZJ8HQisCKRN9ZKdSMYfX"/>
+<span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold truncate">ShadowReaper99</span>
+<span class="bg-primary/20 text-primary font-label-micro text-label-micro px-1 rounded uppercase">Officer</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Online • In Arena
+              </span>
+</div>
+</div>
+<div class="text-right flex flex-col items-end flex-shrink-0">
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">12,840</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Contrib.</span>
+</div>
+</div>
+<!-- Member Item 2 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Anime sorceress avatar with crystalline silver braid and azure glowing eyes, mystical anime fantasy portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHBaMozrKAoYXC79j24hK9-GrPXr-asmWJBxEIyHhwQuL6az7QnjXJy8dfsYRxB3JAJjls-AFMc5SUEaEHbJpo9l97Qxky1iwbf8Uyr5vhYmSKuJprYsccd7-VNJw5OcYvsI5gzHPNsI9IJzx5NNE1R1q6BD-ovH2P4C0bD-ncqmRKJZo1ZIhMI47XEBraalW30a2hYtCzY8qe2iux3XeSpNUBCHeB5nUwq3g2LYZk8Swjmmdo0aJ"/>
+<span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold truncate">Lyra_Sky</span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-micro text-label-micro px-1 rounded uppercase">Elite</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active 2h ago</span>
+</div>
+</div>
+<div class="text-right flex flex-col items-end flex-shrink-0">
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">9,410</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Contrib.</span>
+</div>
+</div>
+<!-- Member Item 3 -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Stoic armored paladin anime avatar with gold tinted visor and dark steel helm, sharp anime digital artwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGu1JxbGg5sVlJrmrkKm24PXh2cjWbcSrBVm4IKlAWGRvx-BOaUlCaucr-YkXKH0QTFUu0imgxVOy2pmM1V0DX9G2PdCPab_vA4p3jgPMOAa8VSuC48-EE-xZRKbXIRpVvqHqSi-FQ5r_kekEhioSm-WKzMCEhXheKeWWzbamq6pX2C3DTbzl00VQphyYA_SlfqUgB53j8xy5Y6NPQvI2k8UH68dL9D940ZRN5Py0brwHo7rat3Wcv"/>
+<span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold truncate">Kaelen_Aegis</span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-micro text-label-micro px-1 rounded uppercase">Knight</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Online • Idle
+              </span>
+</div>
+</div>
+<div class="text-right flex flex-col items-end flex-shrink-0">
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">8,150</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Contrib.</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Floating Guild Chat Trigger Button -->
+<div class="sticky bottom-4 right-0 px-margin-mobile flex justify-end pointer-events-none mt-space-lg">
+<button class="pointer-events-auto bg-primary-container text-on-primary font-headline-sm text-headline-sm font-bold h-12 px-space-lg rounded-full shadow-lg flex items-center gap-space-xs active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+<span>Guild Comms</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+</button>
+</div>
+</div>
+<script>
+  // Tactical micro-interactions
+  document.getElementById('assaultBtn')?.addEventListener('click', function() {
+    this.classList.add('scale-95');
+    setTimeout(() => {
+      this.classList.remove('scale-95');
+      alert('Entering Guild Cataclysm Raid: Malakor the World-Render!');
+    }, 120);
+  });
+</script></main></body></html>

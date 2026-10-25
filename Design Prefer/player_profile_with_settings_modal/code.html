@@ -1,0 +1,1070 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    /* Custom range thumb styling */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      border-radius: 9999px;
+      background: #4cd7f6;
+      box-shadow: 0 0 10px rgba(76,215,246,0.8);
+      cursor: pointer;
+      margin-top: -5px;
+    }
+    input[type=range]::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 9999px;
+      background: #4cd7f6;
+      box-shadow: 0 0 10px rgba(76,215,246,0.8);
+      cursor: pointer;
+      border: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      border-radius: 9999px;
+      background: #1c1f29;
+    }
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      border-radius: 9999px;
+      background: #1c1f29;
+    }
+    .settings-sheet-transition {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    }
+  </style></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md relative overflow-x-hidden"><header class="fixed top-0 w-full z-40 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0 flex-shrink-0"><img alt="Aetherium Rift Emblem" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none truncate">Aetherium Rift</span><span class="font-label-micro text-label-micro text-secondary font-semibold uppercase tracking-wider mt-0.5">Lv.42 Commander</span></div></div><div class="flex items-center gap-space-xs overflow-x-hidden py-1"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20 shadow-[0_0_8px_rgba(76,215,246,0.15)]"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-tertiary/20 shadow-[0_0_8px_rgba(255,185,95,0.15)]"><span class="material-symbols-outlined text-tertiary text-[16px]">monetization_on</span><span class="font-label-tactical text-label-tactical text-on-surface">84.2K</span></div><div class="hidden xs:flex flex-col items-center bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-primary/20"><div class="flex items-center gap-0.5"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span><span class="font-label-tactical text-label-tactical text-on-surface">88/120</span></div><span class="font-label-micro text-label-micro text-on-surface-variant leading-none">04:12</span></div></div><div class="relative flex-shrink-0 ml-1"><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary to-secondary shadow-[0_0_10px_rgba(208,188,255,0.4)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"></div><span class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary font-label-micro text-label-micro px-1 rounded-sm uppercase tracking-tighter font-extrabold">VIP4</span><span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest animate-pulse"></span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-xl space-y-space-md text-on-surface">
+<!-- Commander Profile Hub Hero Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-xl">
+<!-- Atmospheric Rune Shimmer Overlay -->
+<div class="absolute -right-10 -top-10 w-44 h-44 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -left-12 bottom-0 w-36 h-36 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-md">
+<!-- Upper Profile Row: Avatar, Identity, Controls -->
+<div class="flex items-start gap-space-md">
+<!-- Avatar Column with Runetech Aura Ring -->
+<div class="relative flex-shrink-0">
+<div class="relative p-1 rounded-full bg-gradient-to-br from-primary via-secondary to-primary-container shadow-[0_0_16px_rgba(208,188,255,0.4)]">
+<img class="w-16 h-16 rounded-full object-cover block" data-alt="High fantasy anime void commander portrait with radiant glowing silver hair, ethereal amethyst eyes, regal cosmic runic dark tactical coat with floating luminescent crystal shards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_OgEMB4dfbcHPAHZeUEgtWvMfM86IN3_WqXkcXKzhLmqtIMlyVSWGDelP1tCqwGYi50XcX0HKNyUa5toFphz5kuatlBK9RAT7ak0UuW0_yeZsiCYEbliXGgOFSR1gtJpgbEgssrePOdF4AXye2gkt7wIDfSp93qyyGDtgHJiMs9Zq2ATmwFRMLY7MB4-WHDRJAJEFhZQ5X_aBe_MGhldfHnSkrrRvWsfG-tjfOHWhU1uQ6mvYSbRM">
+</div>
+<!-- VIP Tier Sigil Badge -->
+<div class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary font-label-micro text-label-micro px-1.5 py-0.5 rounded-sm uppercase tracking-wider font-extrabold shadow-md">
+            VIP 4
+          </div>
+</div>
+<!-- Name, Title, UID & Quick Actions -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<h1 class="font-headline-md text-headline-md text-on-surface truncate">Valen_Vanguard</h1>
+<span class="material-symbols-outlined text-secondary text-base flex-shrink-0" title="Verified Commander">verified</span>
+</div>
+<!-- Action Icons Group -->
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit Profile" class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button aria-label="Settings" class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-transform settings-trigger-btn" id="openSettingsBtn" title="Commander Settings">
+<span class="material-symbols-outlined text-base">settings</span>
+</button>
+<button aria-label="Share Commander Card" class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-base">share</span>
+</button>
+</div>
+</div>
+<!-- Title & Level Tags -->
+<div class="flex items-center gap-2 mt-1 flex-wrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary/15 text-primary font-label-tactical text-[10px] uppercase tracking-wider">
+              ✦ Astral Sovereign
+            </span>
+<span class="font-label-tactical text-label-tactical text-secondary-fixed-dim">
+              Lv. 42 Commander
+            </span>
+</div>
+<!-- UID with Copy Action -->
+<div class="flex items-center gap-1.5 mt-1.5 cursor-pointer text-on-surface-variant hover:text-on-surface active:opacity-80 transition-colors" id="copyUidBtn">
+<span class="font-label-micro text-label-micro tracking-widest text-outline">UID: #8492-3011</span>
+<span class="material-symbols-outlined text-[13px] text-outline">content_copy</span>
+<span class="font-label-micro text-label-micro text-secondary hidden" id="copyToast">Copied!</span>
+</div>
+</div>
+</div>
+<!-- Level & EXP Progression Telemetry -->
+<div class="bg-surface-container rounded-lg p-space-sm space-y-1.5">
+<div class="flex items-center justify-between text-label-micro font-label-micro">
+<span class="text-on-surface-variant uppercase tracking-wider font-semibold">Rank EXP 78%</span>
+<span class="text-on-surface font-label-numeric text-[11px]">9,420 / 12,000</span>
+</div>
+<!-- EXP Segmented Track -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary via-primary to-primary-fixed shadow-[0_0_8px_rgba(208,188,255,0.7)]" style="width: 78.5%;"></div>
+</div>
+<div class="flex items-center justify-between pt-0.5 text-label-micro font-label-micro">
+<span class="text-secondary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +2,580 EXP to Lv. 43
+          </span>
+<div class="flex items-center gap-1 bg-surface-container-high px-1.5 py-0.5 rounded text-tertiary">
+<span class="material-symbols-outlined text-[12px]">diamond</span>
+<span class="font-label-tactical text-[10px]">Next: +50 Astral Gems</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Codex & Collection Sync Tri-Panel -->
+<div class="grid grid-cols-3 gap-gutter-mobile">
+<!-- Card Codex Progress -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col justify-between space-y-2 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-lg">style</span>
+<span class="font-label-micro text-label-micro text-secondary font-bold">40%</span>
+</div>
+<div>
+<div class="font-label-numeric text-label-numeric text-on-surface">48 / 120</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant uppercase mt-0.5">Card Codex</p>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+<!-- SSR Roster Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col justify-between space-y-2 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary text-lg">hotel_class</span>
+<span class="font-label-micro text-label-micro text-tertiary font-bold">SSR</span>
+</div>
+<div>
+<div class="font-label-numeric text-label-numeric text-on-surface">8 Relics</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant uppercase mt-0.5">Awakened</p>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 66%;"></div>
+</div>
+</div>
+<!-- Achievement Score -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col justify-between space-y-2 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-lg">military_tech</span>
+<span class="font-label-micro text-label-micro text-primary font-bold">Tier VII</span>
+</div>
+<div>
+<div class="font-label-numeric text-label-numeric text-on-surface">2,450</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant uppercase mt-0.5">Mythic Pts</p>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 81%;"></div>
+</div>
+</div>
+</div>
+<!-- Competitive Ranked Telemetry Bento -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">shield</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Season IX Combat Telemetry</span>
+</div>
+<span class="font-label-micro text-label-micro px-2 py-0.5 rounded-full bg-surface-container text-secondary font-bold uppercase">Active Tier</span>
+</div>
+<!-- Rank Hero Tier Banner -->
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-gradient-to-tr from-secondary-container/40 via-surface-container-high to-primary/30 flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.3)]">
+<span class="material-symbols-outlined text-secondary text-2xl">workspace_premium</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Diamond III</span>
+<span class="font-label-micro text-label-micro text-secondary font-extrabold uppercase bg-secondary/10 px-1 py-0.2 rounded">Tier 3</span>
+</div>
+<p class="font-label-tactical text-label-tactical text-outline">2,875 RP • Top 1.5% Regional</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric text-primary">+125 RP</span>
+<p class="font-label-micro text-label-micro text-outline">This Cycle</p>
+</div>
+</div>
+<!-- Combat Analytics Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-micro text-label-micro uppercase">Win Ratio</span>
+<span class="material-symbols-outlined text-sm text-primary">pie_chart</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary">68.4%</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant font-label-numeric">142W / 66L</span>
+</div>
+<!-- Dual Win/Loss Meter -->
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden mt-1.5 flex">
+<div class="bg-secondary h-full" style="width: 68.4%;"></div>
+<div class="bg-outline-variant h-full" style="width: 31.6%;"></div>
+</div>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-micro text-label-micro uppercase">Streak &amp; Raids</span>
+<span class="material-symbols-outlined text-sm text-tertiary">local_fire_department</span>
+</div>
+<div class="mt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-micro text-label-micro text-on-surface-variant">Best Streak</span>
+<span class="font-label-tactical text-label-tactical text-tertiary font-bold">12 Wins</span>
+</div>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-micro text-label-micro text-on-surface-variant">Incursions</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold">86 Cleared</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Showcase Guardian & Signature Vanguard Formation -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-xl">star</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Showcase Vanguard</span>
+</div>
+<span class="font-label-micro text-label-micro text-tertiary flex items-center gap-0.5 font-bold uppercase">
+<span class="material-symbols-outlined text-xs">verified_user</span> Favorite
+      </span>
+</div>
+<!-- Featured Card Entity Container -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high p-space-sm flex gap-space-md shadow-inner">
+<!-- Miniature Collectible Card Asset -->
+<div class="relative w-24 h-36 flex-shrink-0 rounded-lg overflow-hidden shadow-lg bg-surface-container-lowest">
+<img class="w-full h-full object-cover block" data-alt="Dark anime warrior hero Astra Veyron with cosmic violet runic armor holding a translucent astral sword amidst a nebulous void battlefield background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASPN-NAH_TnRpGQ724Ig9qTqLPH4OdVgBYuCR9ppvVny83_zaAVCNRaKG6i4zAnYDKvhNz4RqqPAPcVZ4J9shLmEMVCHvCSHx8Kmi-laVmAOTgt8FWDLyLvRZmYKa8pBMHEvMqfNI5hAbrDeJCCFtbh2tk7ZBqAccMoFuDus1IJODzYSjRBxgN-U31x6Ez_HXyGnH-Y44ByAJKhTggokFw1hsbKEp0tQawmaPZD1XMHurNVVGyWf86">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- AP Orb -->
+<div class="absolute top-1 left-1 w-5 h-5 rounded-full bg-secondary flex items-center justify-center font-label-tactical text-[10px] text-on-secondary font-black shadow-sm">
+          4
+        </div>
+<!-- Rarity Emblem -->
+<div class="absolute top-1 right-1 bg-tertiary text-on-tertiary font-label-micro text-[8px] font-black px-1 rounded-sm">
+          SSR
+        </div>
+<!-- Quick Card Stat Footer -->
+<div class="absolute bottom-1 inset-x-1 flex justify-between font-label-tactical text-[9px]">
+<span class="text-error font-extrabold flex items-center"><span class="material-symbols-outlined text-[10px]">swords</span>9.2k</span>
+<span class="text-secondary font-extrabold flex items-center"><span class="material-symbols-outlined text-[10px]">shield</span>14.2k</span>
+</div>
+</div>
+<!-- Card Lore & Specs -->
+<div class="flex-1 min-w-0 flex flex-col justify-between py-0.5">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Astra Veyron</span>
+<span class="font-label-micro text-label-micro text-tertiary font-bold px-1.5 py-0.5 rounded bg-tertiary/10">MAX Lv.60</span>
+</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant mt-0.5">Abyssal Aegis Vanguard • Cosmic Tank</p>
+<div class="mt-2 flex items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs text-primary">bolt</span>
+<span class="font-label-tactical text-label-tactical text-primary font-bold">14,250 PWR</span>
+</div>
+<span class="font-label-micro text-label-micro text-secondary font-semibold">Awakening V</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant line-clamp-2 italic">
+          "The stars do not weep for the void; they burn until the black sun surrenders."
+        </p>
+</div>
+</div>
+<!-- Active Battle Team Matrix Strip -->
+<div class="bg-surface-container p-space-sm rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between text-label-micro">
+<span class="font-label-tactical text-label-tactical text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">groups</span>
+          Team 1: Astral Dominance
+        </span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">52,860 PWR</span>
+</div>
+<!-- 4 Avatar Roster Formation -->
+<div class="flex items-center justify-between gap-space-xs pt-1">
+<div class="flex items-center gap-space-xs">
+<!-- Char 1 -->
+<div class="w-10 h-10 rounded-lg overflow-hidden relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Anime card portrait of Astra Veyron in violet armor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwA0AkOYYwvN7ZX5LTKaTtklGvTcGi_guzlPczRh8hWEGG_qEkYSquE8UdDv0uenY67JGs4ZTY5rwvOO5mc2dalG0qeYhZTel-Giuy40a-aomLW37ExCUHu4MGC-KDQL8AUolNcNDgYu8_A5nq0g42Nk8bt4UpMESYLhiCi0luMLYokmiRxk0ggoLhFGW34aqHbYkZRsIW-9E5NHhmBjamQr4BxdLck6IWUgC2f7ngkilEQYs7VHy">
+<span class="absolute bottom-0 right-0 bg-secondary text-on-secondary text-[8px] font-bold px-0.5">T1</span>
+</div>
+<!-- Char 2 -->
+<div class="w-10 h-10 rounded-lg overflow-hidden relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Anime cybernetic archer Kairo with turquoise glowing visor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRsgw_LpNB2zdBQXcqsQIHpy4K02oeKbTOev79oYWWfBdFKhd_wWX3supplTjIs4bfRF3-Zh9WjbhD4nLqqYmZam6LsrNdS2PcaPoh5nG4Ob-joXX4aJkSB9atrs9v4IJXmHqyWPUQjg6LjSkADKFw3LLrtHDK1LrwaTOO__-ZQu9dr7gRGwEAu3jWfVSDfUmd4ibc6-Bq0MKGQ-mOQ4DwP-w_MFLIIaoPaWi4DJmeEf9-jMNqKTP4">
+<span class="absolute bottom-0 right-0 bg-primary text-on-primary text-[8px] font-bold px-0.5">T2</span>
+</div>
+<!-- Char 3 -->
+<div class="w-10 h-10 rounded-lg overflow-hidden relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Mystical anime sorceress Lyra summoning golden runic circle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKt9mqqNVnGFk-fSoEimOWynq6WybNlSQ9lenx7qkQB8TFHF6138f_FQvTPxTzwBSlirUd1dhM8ezjBOQ7h8ZHJiNjQk-h6vnEnQOi114mPRHXYXXB4fvsyCOIs9s2zMzjE0JPO-JZMn-lDDKlDMW6gA6TLKwbc_pvtmcQmzXTzbiW7nM7RGvZP9nriWiN9B9GLKhkK6cmCgsiPvQlykpLCNR-ry45YMmnR5AN-oqlLuBqKBdxjNne">
+<span class="absolute bottom-0 right-0 bg-tertiary text-on-tertiary text-[8px] font-bold px-0.5">T3</span>
+</div>
+<!-- Char 4 -->
+<div class="w-10 h-10 rounded-lg overflow-hidden relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Anime healer priestess Mirelle enveloped in blue starlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwj1YnDI9FtSZc1y47CxJ_x-QxDw2CRN9tecRnQRYW4z2eCAOHw5Pj54zBqU8F3IXDIIbJsoyRbUnth0i49wqRT4aHpihiCccdUgqI5JTqlTiOZd6WAeUuk5LTBc_1xQHPFF51rO0znT8rXVweglIc5-Im0pwtJtqxT1igSLqKvF0nrN9BVsfwY4d5w9wOvjKCVnv-jlDUfKypmg3nD6Y2VgeDyeYNKROL1_3LsGCdrbnQXaQ7N-28">
+<span class="absolute bottom-0 right-0 bg-secondary-container text-on-secondary-container text-[8px] font-bold px-0.5">T4</span>
+</div>
+</div>
+<!-- Resonance Synergy Tag -->
+<div class="flex flex-col items-end">
+<div class="bg-primary/10 px-2 py-0.5 rounded text-primary font-label-micro text-label-micro font-bold uppercase tracking-wider">
+            Astral 3/3
+          </div>
+<span class="font-label-micro text-[8px] text-outline mt-0.5">+15% Void DMG</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Milestone Honors & Badges Carousel -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Honors &amp; Runemarks</span>
+<span class="font-label-tactical text-label-tactical text-secondary">16 / 24 Unlocked</span>
+</div>
+<!-- Horizontal Scrollable Badges Ribbon -->
+<div class="flex gap-space-sm overflow-x-auto pb-1 pt-0.5 no-scrollbar">
+<!-- Badge 1: Rift Conqueror -->
+<div class="min-w-[124px] bg-surface-container-low rounded-xl p-space-sm flex flex-col items-center text-center space-y-1 shadow-sm flex-shrink-0">
+<div class="w-10 h-10 rounded-full bg-tertiary/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">trophy</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface truncate w-full">Rift Conqueror</span>
+<span class="font-label-micro text-[8px] text-tertiary font-bold uppercase">50 Incursions</span>
+</div>
+<!-- Badge 2: Runic Perfection -->
+<div class="min-w-[124px] bg-surface-container-low rounded-xl p-space-sm flex flex-col items-center text-center space-y-1 shadow-sm flex-shrink-0">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">auto_fix_high</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface truncate w-full">Runic Perfection</span>
+<span class="font-label-micro text-[8px] text-primary font-bold uppercase">Tier 5 Relic</span>
+</div>
+<!-- Badge 3: Apex Duelist -->
+<div class="min-w-[124px] bg-surface-container-low rounded-xl p-space-sm flex flex-col items-center text-center space-y-1 shadow-sm flex-shrink-0">
+<div class="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">swords</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface truncate w-full">Apex Duelist</span>
+<span class="font-label-micro text-[8px] text-secondary font-bold uppercase">Season IX Diamond</span>
+</div>
+<!-- Badge 4: Unbroken Will -->
+<div class="min-w-[124px] bg-surface-container-low rounded-xl p-space-sm flex flex-col items-center text-center space-y-1 shadow-sm flex-shrink-0">
+<div class="w-10 h-10 rounded-full bg-error/15 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-2xl">vital_signs</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface truncate w-full">Unbroken Will</span>
+<span class="font-label-micro text-[8px] text-error font-bold uppercase">&lt;5% HP Clutched</span>
+</div>
+</div>
+</div>
+<!-- Recent Match History Duel Matrix -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">history</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Recent Encounters</span>
+</div>
+<button class="font-label-tactical text-label-tactical text-secondary hover:text-primary transition-colors">
+        Full Log
+      </button>
+</div>
+<!-- Match 1: Victory -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary font-headline-sm font-bold flex-shrink-0">
+          W
+        </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[14px]">vs. ShadowReaper99</span>
+<span class="font-label-micro text-label-micro text-outline">D-IV</span>
+</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant">Chamber IV Raid • 7 Turns • 14m ago</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0 pl-2">
+<span class="font-label-tactical text-label-tactical text-secondary font-bold">+32 RP</span>
+<p class="font-label-micro text-label-micro text-secondary-fixed-dim">Victory</p>
+</div>
+</div>
+<!-- Match 2: Victory -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary font-headline-sm font-bold flex-shrink-0">
+          W
+        </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[14px]">vs. Kaelen_Void</span>
+<span class="font-label-micro text-label-micro text-outline">D-III</span>
+</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant">Classic Clash • 5 Turns • 2h ago</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0 pl-2">
+<span class="font-label-tactical text-label-tactical text-secondary font-bold">+28 RP</span>
+<p class="font-label-micro text-label-micro text-secondary-fixed-dim">Victory</p>
+</div>
+</div>
+<!-- Match 3: Defeat -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-error/15 flex items-center justify-center text-error font-headline-sm font-bold flex-shrink-0">
+          L
+        </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[14px]">vs. Nyx_Valkyrie</span>
+<span class="font-label-micro text-label-micro text-outline">M-V</span>
+</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant">Grand Colosseum • Turn 9 Defeat • 5h ago</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0 pl-2">
+<span class="font-label-tactical text-label-tactical text-error font-bold">-14 RP</span>
+<p class="font-label-micro text-label-micro text-outline">Defeat</p>
+</div>
+</div>
+</div>
+</div></main>
+<!-- Interactive Settings Bottom Sheet Modal & Backdrop -->
+<div class="fixed inset-0 z-50 flex flex-col justify-end pointer-events-auto" id="settingsModalRoot">
+<!-- Backdrop Blur Overlay -->
+<div class="absolute inset-0 bg-black/65 backdrop-blur-sm transition-opacity duration-300" id="settingsBackdrop"></div>
+<!-- Bottom Sheet Drawer -->
+<div class="settings-sheet-transition relative w-full max-h-[82vh] flex flex-col rounded-t-[1.75rem] bg-[#10131c]/95 backdrop-blur-2xl border-t border-[#8b5cf6]/40 shadow-[0_-10px_40px_rgba(139,92,246,0.28)] overflow-hidden z-10" id="settingsBottomSheet">
+<!-- Drag Handle Indicator -->
+<div class="pt-3 pb-1 cursor-grab active:cursor-grabbing flex justify-center">
+<div class="w-12 h-1.5 rounded-full bg-slate-600/70"></div>
+</div>
+<!-- Modal Header -->
+<div class="px-margin-mobile pt-1 pb-3 flex items-center justify-between border-b border-surface-container-highest/60 flex-shrink-0">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shadow-[0_0_12px_rgba(208,188,255,0.25)]">
+<span class="material-symbols-outlined text-xl animate-[spin_12s_linear_infinite]">settings</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase font-bold">COMMANDER SETTINGS</h2>
+<span class="font-label-micro px-1.5 py-0.2 rounded bg-secondary/15 text-secondary border border-secondary/25 font-bold">v3.4.1</span>
+</div>
+<p class="font-label-micro text-label-micro text-on-surface-variant">Preferences &amp; Battle Engine Config</p>
+</div>
+</div>
+<button aria-label="Close Settings" class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors active:scale-90" id="closeSettingsBtn">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Category Tabs Navigation Bar -->
+<div class="px-margin-mobile pt-2 pb-2 bg-surface-container-lowest/80 border-b border-surface-container flex gap-1.5 overflow-x-auto no-scrollbar flex-shrink-0" id="settingsTabsContainer"><button class="settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-primary/20 text-primary border border-primary/40 shadow-[0_0_10px_rgba(208,188,255,0.2)]" data-tab="graphics">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="">Graphics &amp; Perf</span>
+</button>
+<button class="settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-surface-container hover:bg-surface-container-high text-on-surface-variant border border-transparent" data-tab="audio">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span class="">Audio &amp; SFX</span>
+</button>
+<button class="settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-surface-container hover:bg-surface-container-high text-on-surface-variant border border-transparent" data-tab="combat">
+<span class="material-symbols-outlined text-[16px]">swords</span>
+<span class="">Combat &amp; Auto</span>
+</button>
+<button class="settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-surface-container hover:bg-surface-container-high text-on-surface-variant border border-transparent" data-tab="account">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+<span class="">Account &amp; Security</span>
+</button></div>
+<!-- Scrollable Settings Content Panels -->
+<div class="flex-1 overflow-y-auto px-margin-mobile py-space-sm space-y-4 text-on-surface overscroll-contain">
+<!-- TAB 1: GRAPHICS & PERFORMANCE -->
+<div class="settings-panel space-y-3.5 block" id="tab-graphics">
+<!-- Frame Rate Selector -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-sm text-on-surface block">Frame Rate Target</span>
+<span class="font-label-micro text-label-micro text-outline">Higher FPS increases fluid combat response</span>
+</div>
+<span class="font-label-tactical text-xs text-secondary font-bold flex items-center gap-1" id="fpsDisplay"><span class="material-symbols-outlined text-[15px]">speed</span> 60 FPS</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 bg-surface-container-lowest p-1 rounded-lg">
+<button class="fps-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface" data-val="30 FPS">30 FPS</button>
+<button class="fps-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all bg-secondary/20 text-secondary font-bold border border-secondary/40 shadow-[0_0_8px_rgba(76,215,246,0.3)] flex items-center justify-center gap-1" data-val="60 FPS">60 FPS <span class="text-[9px] px-1 bg-secondary text-on-secondary rounded font-black">ACTIVE</span></button>
+<button class="fps-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" data-val="120 FPS Ultra">
+120 FPS <span class="text-[9px] px-1 bg-primary/20 text-primary rounded font-black">PRO</span>
+</button>
+</div>
+</div>
+<!-- Visual Quality Selector -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-sm text-on-surface block">Visual Quality Preset</span>
+<span class="font-label-micro text-label-micro text-outline">Rift particle density and texture filtering</span>
+</div>
+<span class="font-label-tactical text-xs text-primary font-bold bg-primary/15 px-2 py-0.5 rounded border border-primary/30">High HD</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 bg-surface-container-lowest p-1 rounded-lg">
+<button class="quality-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface">Battery Saver</button>
+<button class="quality-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all bg-primary/20 text-primary font-bold border border-primary/40 shadow-[0_0_8px_rgba(208,188,255,0.3)] flex items-center justify-center gap-1">High HD</button>
+<button class="quality-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1">Ultra 4K</button>
+</div>
+</div>
+<!-- Character Render Detail Card -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-sm text-on-surface block">Character Render Detail</span>
+<span class="font-label-micro text-label-micro text-outline">Anti-Aliasing 4x MSAA &amp; High-res 3D geometry</span>
+</div>
+<span class="font-label-micro text-secondary font-bold bg-secondary/15 px-2 py-0.5 rounded border border-secondary/30">4x MSAA</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">view_in_ar</span>
+<span class="font-label-tactical text-xs text-on-surface font-semibold">High Quality (4x MSAA Enabled)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+</div>
+</div>
+<!-- Shaders and Post FX Toggles -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-3">
+<div class="flex items-center justify-between pb-0.5 border-b border-surface-container-highest/60">
+<span class="font-label-tactical text-xs text-secondary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">auto_fix_high</span> Rendering &amp; Post-Processing
+</span>
+<span class="font-label-micro text-outline">VFX Engine</span>
+</div>
+<!-- Toggle 1: Vanguard Bloom & Shaders (ON) -->
+<div class="flex items-center justify-between">
+<div class="pr-2">
+<span class="font-headline-sm text-sm text-on-surface block">Vanguard Bloom &amp; Shaders</span>
+<span class="font-label-micro text-label-micro text-outline">Dynamic HDR aura and astral light reflections</span>
+</div>
+<button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-secondary/80 focus:outline-none flex-shrink-0" data-checked="true">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+</button>
+</div>
+<div class="h-px bg-surface-container-highest/60"></div>
+<!-- Toggle 2: Screen Shake & Ultimate FX (ON) -->
+<div class="flex items-center justify-between">
+<div class="pr-2">
+<span class="font-headline-sm text-sm text-on-surface block">Screen Shake &amp; Ultimate FX</span>
+<span class="font-label-micro text-label-micro text-outline">Kinetic void feedback during Burst executions</span>
+</div>
+<button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-secondary/80 focus:outline-none flex-shrink-0" data-checked="true">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+</button>
+</div>
+<div class="h-px bg-surface-container-highest/60"></div>
+<!-- Toggle 3: Dynamic Resolution Scaling (OFF) -->
+<div class="flex items-center justify-between">
+<div class="pr-2">
+<span class="font-headline-sm text-sm text-on-surface block">Dynamic Resolution Scaling</span>
+<span class="font-label-micro text-label-micro text-outline">Downscale resolution dynamically during heavy particle combat</span>
+</div>
+<button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-surface-container-highest focus:outline-none flex-shrink-0" data-checked="false">
+<span class="block w-5 h-5 rounded-full bg-outline-variant shadow-md transform transition-transform duration-200 translate-x-1"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- TAB 2: AUDIO & ACOUSTICS -->
+<div class="settings-panel space-y-3.5 hidden" id="tab-audio"><!-- Volume Sliders Group Card -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-3.5">
+  <!-- Master Volume -->
+  <div class="space-y-1.5">
+    <div class="flex justify-between items-center text-xs font-label-tactical">
+      <span class="flex items-center gap-1.5 text-on-surface font-semibold">
+        <span class="material-symbols-outlined text-sm text-secondary">volume_up</span> Master Volume
+      </span>
+      <div class="flex items-center gap-2">
+        <button class="text-outline hover:text-on-surface transition-colors flex items-center" title="Toggle Mute">
+          <span class="material-symbols-outlined text-[15px]">volume_off</span>
+        </button>
+        <span class="px-1.5 py-0.5 rounded bg-secondary/15 text-secondary border border-secondary/30 font-label-numeric font-bold text-[11px]">85%</span>
+      </div>
+    </div>
+    <div class="relative w-full flex items-center">
+      <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5 flex">
+        <div class="h-full rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_rgba(76,215,246,0.3)]" style="width: 85%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- BGM / Incursion Music -->
+  <div class="space-y-1.5">
+    <div class="flex justify-between items-center text-xs font-label-tactical">
+      <span class="flex items-center gap-1.5 text-on-surface">
+        <span class="material-symbols-outlined text-sm text-primary">music_note</span> BGM / Incursion Music
+      </span>
+      <span class="px-1.5 py-0.5 rounded bg-primary/15 text-primary border border-primary/30 font-label-numeric font-bold text-[11px]">80%</span>
+    </div>
+    <div class="relative w-full flex items-center">
+      <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5 flex">
+        <div class="h-full rounded-full bg-primary shadow-[0_0_8px_rgba(208,188,255,0.3)]" style="width: 80%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Sound Effects (SFX) -->
+  <div class="space-y-1.5">
+    <div class="flex justify-between items-center text-xs font-label-tactical">
+      <span class="flex items-center gap-1.5 text-on-surface">
+        <span class="material-symbols-outlined text-sm text-tertiary">swords</span> Sound Effects (SFX)
+      </span>
+      <span class="px-1.5 py-0.5 rounded bg-tertiary/15 text-tertiary border border-tertiary/30 font-label-numeric font-bold text-[11px]">95%</span>
+    </div>
+    <div class="relative w-full flex items-center">
+      <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5 flex">
+        <div class="h-full rounded-full bg-tertiary shadow-[0_0_8px_rgba(255,185,95,0.2)]" style="width: 95%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Character Voice -->
+  <div class="space-y-1.5">
+    <div class="flex justify-between items-center text-xs font-label-tactical">
+      <span class="flex items-center gap-1.5 text-on-surface">
+        <span class="material-symbols-outlined text-sm text-secondary">record_voice_over</span> Character Voice
+      </span>
+      <span class="px-1.5 py-0.5 rounded bg-secondary/15 text-secondary border border-secondary/30 font-label-numeric font-bold text-[11px]">90%</span>
+    </div>
+    <div class="relative w-full flex items-center">
+      <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5 flex">
+        <div class="h-full rounded-full bg-secondary shadow-[0_0_8px_rgba(76,215,246,0.3)]" style="width: 90%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Voice Language Cast Selector -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+  <div class="flex items-center justify-between">
+    <span class="font-headline-sm text-sm text-on-surface">Voiceover Language</span>
+    <span class="font-label-micro text-secondary font-bold">2.4 GB Installed</span>
+  </div>
+  <div class="grid grid-cols-2 gap-2">
+    <button class="voice-pill py-2 px-3 rounded-lg text-left border bg-secondary/15 border-secondary/40 shadow-[0_0_8px_rgba(76,215,246,0.15)] flex items-center justify-between">
+      <div>
+        <span class="font-label-tactical text-xs text-on-surface block font-bold">Japanese (Original)</span>
+        <span class="font-label-micro text-secondary-fixed-dim">Full Void Cast VO</span>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+    </button>
+    <button class="voice-pill py-2 px-3 rounded-lg text-left border bg-surface-container border-transparent flex items-center justify-between hover:border-surface-variant transition-colors">
+      <div>
+        <span class="font-label-tactical text-xs text-on-surface-variant block">English</span>
+        <span class="font-label-micro text-outline">Studio Dubbing</span>
+      </div>
+      <span class="material-symbols-outlined text-outline text-base">radio_button_unchecked</span>
+    </button>
+  </div>
+</div>
+
+<!-- Audio Feature Toggles -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-3">
+  <!-- Toggle 1: Burst Vocal Triggers (ON) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Ultimate Burst Vocal Triggers</span>
+      <span class="font-label-micro text-label-micro text-outline">Play signature hero voice lines upon Burst execution</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-secondary/80 focus:outline-none flex-shrink-0" data-checked="true">
+      <span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+    </button>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Toggle 2: Spatial Rift Acoustics (ON) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Spatial Rift Acoustics</span>
+      <span class="font-label-micro text-label-micro text-outline">Dynamic 3D ambient reverb in abyssal chambers</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-primary/80 focus:outline-none flex-shrink-0" data-checked="true">
+      <span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+    </button>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Toggle 3: Mute When In Background (OFF) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Mute When In Background</span>
+      <span class="font-label-micro text-label-micro text-outline">Mute game audio when tab or application loses focus</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-surface-container-highest focus:outline-none flex-shrink-0" data-checked="false">
+      <span class="block w-5 h-5 rounded-full bg-outline-variant shadow-md transform transition-transform duration-200 translate-x-1"></span>
+    </button>
+  </div>
+</div></div>
+<!-- TAB 3: COMBAT & AUTO-BATTLE -->
+<div class="settings-panel space-y-3.5 hidden" id="tab-combat"><!-- Battle Speed Directive Card -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2.5">
+  <div class="flex items-center justify-between">
+    <div>
+      <span class="font-headline-sm text-sm text-on-surface block">Battle Speed Multiplier</span>
+      <span class="font-label-micro text-label-micro text-outline">Simulation pace during encounter engagements</span>
+    </div>
+    <span class="font-label-tactical text-xs text-secondary font-bold flex items-center gap-1">
+      <span class="material-symbols-outlined text-[15px]">speed</span> 2.0x Fast
+    </span>
+  </div>
+  <div class="grid grid-cols-3 gap-1.5 bg-surface-container-lowest p-1 rounded-lg">
+    <button class="py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface">1.0x</button>
+    <button class="py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface">1.5x</button>
+    <button class="py-1.5 text-center font-label-tactical text-xs rounded transition-all bg-secondary/20 text-secondary font-bold border border-secondary/40 shadow-[0_0_8px_rgba(76,215,246,0.3)] flex items-center justify-center gap-1">
+      2.0x <span class="text-[9px] px-1 bg-secondary text-on-secondary rounded font-black">ACTIVE</span>
+    </button>
+  </div>
+</div>
+
+<!-- Auto-Battle Automation Directives -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-3">
+  <div class="flex items-center justify-between pb-0.5 border-b border-surface-container-highest/60">
+    <span class="font-label-tactical text-xs text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-sm">smart_toy</span> Automation Directives
+    </span>
+    <span class="font-label-micro text-secondary font-semibold">Vanguard AI Engine</span>
+  </div>
+
+  <!-- Auto-Cast Ultimate Bursts (ON) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Auto-Cast Ultimate Bursts</span>
+      <span class="font-label-micro text-label-micro text-outline">Automatically unleash 100% charged guardian ultimate skills</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-secondary/80 focus:outline-none flex-shrink-0" data-checked="true">
+      <span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+    </button>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Smart Target Focus Priority -->
+  <div class="space-y-1.5">
+    <div class="flex items-center justify-between">
+      <div>
+        <span class="font-headline-sm text-sm text-on-surface block">Smart Target Focus</span>
+        <span class="font-label-micro text-label-micro text-outline">Priority targeting logic for AI offensive burst sequence</span>
+      </div>
+      <span class="font-label-tactical text-xs text-primary font-bold bg-primary/15 px-2 py-0.5 rounded border border-primary/30">Boss First</span>
+    </div>
+    <div class="grid grid-cols-4 gap-1 bg-surface-container-lowest p-1 rounded-lg text-center">
+      <button class="py-1.5 font-label-tactical text-[11px] rounded transition-all text-on-surface-variant hover:text-on-surface">Lowest HP</button>
+      <button class="py-1.5 font-label-tactical text-[11px] rounded transition-all bg-primary/20 text-primary font-bold border border-primary/40 shadow-[0_0_8px_rgba(208,188,255,0.25)]">Boss</button>
+      <button class="py-1.5 font-label-tactical text-[11px] rounded transition-all text-on-surface-variant hover:text-on-surface">Elite</button>
+      <button class="py-1.5 font-label-tactical text-[11px] rounded transition-all text-on-surface-variant hover:text-on-surface">Backline</button>
+    </div>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Consumable Auto-Use (OFF) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Consumable Auto-Use</span>
+      <span class="font-label-micro text-label-micro text-outline">Automatically consume Rift Potions when squad HP drops below 25%</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-surface-container-highest focus:outline-none flex-shrink-0" data-checked="false">
+      <span class="block w-5 h-5 rounded-full bg-outline-variant shadow-md transform transition-transform duration-200 translate-x-1"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Tactical Combat Preferences -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-3">
+  <div class="flex items-center justify-between pb-0.5 border-b border-surface-container-highest/60">
+    <span class="font-label-tactical text-xs text-secondary font-bold uppercase tracking-wider flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-sm">swords</span> Tactical Combat Preferences
+    </span>
+    <span class="font-label-micro text-outline">Gameplay Tweaks</span>
+  </div>
+
+  <!-- Skip Ultimate Cutscenes (ON) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Skip Ultimate Cutscenes</span>
+      <span class="font-label-micro text-label-micro text-outline">Play shortened animation sequences during combat</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-secondary/80 focus:outline-none flex-shrink-0" data-checked="true">
+      <span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+    </button>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Confirm High-Cost Action (5+ EN) (ON) -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Confirm High-Cost Action (5+ EN)</span>
+      <span class="font-label-micro text-label-micro text-outline">Show prompt when executing high-mana actions in manual play</span>
+    </div>
+    <button class="interactive-toggle relative w-12 h-6 rounded-full transition-colors duration-200 bg-primary/80 focus:outline-none flex-shrink-0" data-checked="true">
+      <span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+    </button>
+  </div>
+
+  <div class="h-px bg-surface-container-highest/60"></div>
+
+  <!-- Auto-Repeat Encounter on Victory -->
+  <div class="flex items-center justify-between">
+    <div class="pr-2">
+      <span class="font-headline-sm text-sm text-on-surface block">Auto-Repeat Encounter on Victory</span>
+      <span class="font-label-micro text-label-micro text-outline">Queue consecutive rift runs until stamina depletion</span>
+    </div>
+    <div class="flex items-center gap-1.5 flex-shrink-0">
+      <button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-outline hover:text-on-surface active:scale-95">
+        <span class="material-symbols-outlined text-sm">remove</span>
+      </button>
+      <span class="px-2 py-1 bg-surface-container-highest rounded-lg font-label-tactical text-xs text-secondary font-bold border border-secondary/30 min-w-[56px] text-center">5x Runs</span>
+      <button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-outline hover:text-on-surface active:scale-95">
+        <span class="material-symbols-outlined text-sm">add</span>
+      </button>
+    </div>
+  </div>
+</div></div>
+<!-- TAB 4: ACCOUNT & SECURITY -->
+<div class="settings-panel space-y-3 hidden" id="tab-account">
+<!-- Bound Accounts -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+<span class="font-headline-sm text-sm text-on-surface block">Linked Authentication</span>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between bg-surface-container p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">cloud_done</span>
+<span class="font-label-tactical text-xs text-on-surface">Google Play Game Services</span>
+</div>
+<span class="font-label-micro text-secondary font-bold bg-secondary/15 px-2 py-0.5 rounded">Linked</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">token</span>
+<span class="font-label-tactical text-xs text-on-surface">Elysia Cloud Cross-Save ID</span>
+</div>
+<span class="font-label-micro text-primary font-bold bg-primary/15 px-2 py-0.5 rounded">Linked</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Redeem -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl space-y-2">
+<span class="font-headline-sm text-sm text-on-surface block">Redeem Astral Gift Code</span>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container border border-surface-container-highest rounded-lg px-3 py-1.5 text-xs text-on-surface placeholder:text-outline font-label-tactical uppercase tracking-wider focus:outline-none focus:border-secondary" id="promoInput" placeholder="AETHER-SUMMON-2025" type="text">
+<button class="px-3.5 py-1.5 bg-secondary text-on-secondary font-label-tactical text-xs font-bold rounded-lg hover:bg-secondary-fixed transition-colors active:scale-95" id="redeemBtn">Redeem</button>
+</div>
+<span class="font-label-micro text-secondary hidden" id="promoSuccess">Code activated! +300 Astral Gems transferred to mail.</span>
+</div>
+<!-- Cache Management & UID -->
+<div class="bg-surface-container-low border border-surface-container p-space-sm rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-tactical text-xs text-on-surface block">Combat Asset Cache</span>
+<span class="font-label-micro text-outline">Stored textures: 412 MB</span>
+</div>
+<button class="px-2.5 py-1 text-xs rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant font-label-tactical active:scale-95 transition-all" id="clearCacheBtn">Clear Cache</button>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Sheet Action Footer -->
+<div class="px-margin-mobile py-3 bg-surface-container-lowest/95 border-t border-surface-container flex items-center gap-3 flex-shrink-0">
+<button class="w-1/3 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-tactical text-xs uppercase tracking-wider font-bold transition-all active:scale-95" id="resetDefaultsBtn">
+        Reset
+      </button>
+<button class="flex-1 py-2.5 rounded-lg bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white font-label-tactical text-xs uppercase tracking-wider font-bold shadow-lg shadow-violet-500/25 transition-all active:scale-95 flex items-center justify-center gap-1.5" id="saveSettingsBtn">
+<span class="material-symbols-outlined text-sm">check</span>
+<span class="">Save &amp; Apply</span>
+</button>
+</div>
+</div>
+</div>
+<nav class="fixed bottom-0 w-full z-40 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-8px_24px_rgba(160,120,255,0.12)]" data-active-classes="text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.7))]"><div class="flex items-center justify-around h-20 px-space-xs relative"><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-2xl">fort</span><span class="font-label-micro text-label-micro mt-1 uppercase">Home</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="collection" href="#"><span class="absolute top-0 right-1 px-1 bg-secondary-container text-on-secondary-container font-label-micro text-[8px] rounded-full font-bold shadow-sm">48/120</span><span class="material-symbols-outlined text-2xl">style</span><span class="font-label-micro text-label-micro mt-1 uppercase">Collection</span></a><div class="relative -top-3 flex flex-col items-center justify-center"><a class="w-14 h-14 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary flex items-center justify-center text-on-primary-fixed shadow-[0_0_20px_rgba(160,120,255,0.6)] transform rotate-45 border-2 border-primary active:scale-90 transition-transform duration-150" data-path="battle" href="#"><span class="material-symbols-outlined text-3xl transform -rotate-45 text-surface-container-lowest font-black">swords</span></a><span class="font-label-tactical text-label-tactical text-primary font-bold tracking-wider uppercase mt-1 drop-shadow-[0_0_6px_rgba(208,188,255,0.8)]">Battle</span></div><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="team" href="#"><span class="material-symbols-outlined text-2xl">groups_2</span><span class="font-label-micro text-label-micro mt-1 uppercase">Team</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-all duration-200 active:scale-95 text-primary" data-path="commander-profile" href="#" style="filter: drop-shadow(rgba(208, 188, 255, 0.7) 0px 0px 8px);"><span class="material-symbols-outlined text-2xl">shield_person</span><span class="font-label-micro text-label-micro mt-1 uppercase">Profile</span></a></div></nav>
+<!-- Micro-interactions and Bottom Sheet Logic -->
+<script>
+  // Copy UID Micro-interaction
+  const copyBtn = document.getElementById('copyUidBtn');
+  const toast = document.getElementById('copyToast');
+  if (copyBtn && toast) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard?.writeText('#8492-3011').catch(() => {});
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2000);
+    });
+  }
+
+  // Active Bottom Nav highlight
+  const navItems = document.querySelectorAll('nav a');
+  navItems.forEach(item => {
+    const isProfile = item.getAttribute('data-path') === 'commander-profile';
+    if (isProfile) {
+      item.classList.remove('text-on-surface-variant');
+      item.classList.add('text-primary');
+      item.style.filter = 'drop-shadow(0 0 8px rgba(208, 188, 255, 0.7))';
+    }
+  });
+
+  // Settings Bottom Sheet State & Event Handlers
+  const modalRoot = document.getElementById('settingsModalRoot');
+  const bottomSheet = document.getElementById('settingsBottomSheet');
+  const backdrop = document.getElementById('settingsBackdrop');
+  const openBtn = document.getElementById('openSettingsBtn');
+  const closeBtn = document.getElementById('closeSettingsBtn');
+  const saveBtn = document.getElementById('saveSettingsBtn');
+  const resetBtn = document.getElementById('resetDefaultsBtn');
+
+  function openSettings() {
+    modalRoot.classList.remove('pointer-events-none');
+    modalRoot.classList.add('pointer-events-auto');
+    backdrop.style.opacity = '1';
+    bottomSheet.style.transform = 'translateY(0%)';
+  }
+
+  function closeSettings() {
+    bottomSheet.style.transform = 'translateY(100%)';
+    backdrop.style.opacity = '0';
+    setTimeout(() => {
+      modalRoot.classList.add('pointer-events-none');
+      modalRoot.classList.remove('pointer-events-auto');
+    }, 320);
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openSettings);
+  if (closeBtn) closeBtn.addEventListener('click', closeSettings);
+  if (saveBtn) {
+    saveBtn.addEventListener('click', () => {
+      saveBtn.innerHTML = '<span class="material-symbols-outlined text-sm">done_all</span><span>Config Applied!</span>';
+      setTimeout(() => {
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span><span>Save & Apply</span>';
+        closeSettings();
+      }, 500);
+    });
+  }
+  if (backdrop) backdrop.addEventListener('click', closeSettings);
+
+  // Tab switching logic
+  const tabButtons = document.querySelectorAll('.settings-tab-btn');
+  const panels = document.querySelectorAll('.settings-panel');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTab = btn.getAttribute('data-tab');
+      
+      tabButtons.forEach(b => {
+        b.className = 'settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-surface-container hover:bg-surface-container-high text-on-surface-variant border border-transparent';
+      });
+      btn.className = 'settings-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-label-tactical whitespace-nowrap transition-all duration-200 bg-primary/20 text-primary border border-primary/40 shadow-[0_0_10px_rgba(208,188,255,0.2)]';
+
+      panels.forEach(p => {
+        p.classList.add('hidden');
+        p.classList.remove('block');
+      });
+      const activePanel = document.getElementById(`tab-${targetTab}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+        activePanel.classList.add('block');
+      }
+    });
+  });
+
+  // Interactive Toggles
+  const toggles = document.querySelectorAll('.interactive-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const isChecked = toggle.getAttribute('data-checked') === 'true';
+      const circle = toggle.firstElementChild;
+      if (isChecked) {
+        toggle.setAttribute('data-checked', 'false');
+        toggle.classList.remove('bg-secondary/80', 'bg-primary/80');
+        toggle.classList.add('bg-surface-container-highest');
+        circle.classList.remove('translate-x-6', 'bg-surface-container-lowest');
+        circle.classList.add('translate-x-1', 'bg-outline-variant');
+      } else {
+        toggle.setAttribute('data-checked', 'true');
+        toggle.classList.remove('bg-surface-container-highest');
+        toggle.classList.add('bg-secondary/80');
+        circle.classList.remove('translate-x-1', 'bg-outline-variant');
+        circle.classList.add('translate-x-6', 'bg-surface-container-lowest');
+      }
+    });
+  });
+
+  // FPS Segmented Pill selector
+  const fpsPills = document.querySelectorAll('.fps-pill');
+  const fpsDisplay = document.getElementById('fpsDisplay');
+  fpsPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      fpsPills.forEach(p => {
+        p.className = 'fps-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface';
+      });
+      pill.className = 'fps-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all bg-secondary/20 text-secondary font-bold border border-secondary/40 shadow-[0_0_8px_rgba(76,215,246,0.3)]';
+      if (fpsDisplay) fpsDisplay.textContent = pill.getAttribute('data-val') || pill.textContent.trim();
+    });
+  });
+
+  // Quality Segmented Pill selector
+  const qualityPills = document.querySelectorAll('.quality-pill');
+  qualityPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      qualityPills.forEach(p => {
+        p.className = 'quality-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all text-on-surface-variant hover:text-on-surface';
+      });
+      pill.className = 'quality-pill py-1.5 text-center font-label-tactical text-xs rounded transition-all bg-primary/20 text-primary font-bold border border-primary/40 shadow-[0_0_8px_rgba(208,188,255,0.3)]';
+    });
+  });
+
+  // Slider value listeners
+  const masterSlider = document.getElementById('masterSlider');
+  const masterVal = document.getElementById('masterVolVal');
+  if (masterSlider && masterVal) {
+    masterSlider.addEventListener('input', (e) => masterVal.textContent = e.target.value + '%');
+  }
+
+  const bgmSlider = document.getElementById('bgmSlider');
+  const bgmVal = document.getElementById('bgmVolVal');
+  if (bgmSlider && bgmVal) {
+    bgmSlider.addEventListener('input', (e) => bgmVal.textContent = e.target.value + '%');
+  }
+
+  const sfxSlider = document.getElementById('sfxSlider');
+  const sfxVal = document.getElementById('sfxVolVal');
+  if (sfxSlider && sfxVal) {
+    sfxSlider.addEventListener('input', (e) => sfxVal.textContent = e.target.value + '%');
+  }
+
+  // Promo Code Redeem Feedback
+  const redeemBtn = document.getElementById('redeemBtn');
+  const promoSuccess = document.getElementById('promoSuccess');
+  if (redeemBtn && promoSuccess) {
+    redeemBtn.addEventListener('click', () => {
+      promoSuccess.classList.remove('hidden');
+      setTimeout(() => promoSuccess.classList.add('hidden'), 3500);
+    });
+  }
+
+  // Clear cache feedback
+  const clearCacheBtn = document.getElementById('clearCacheBtn');
+  if (clearCacheBtn) {
+    clearCacheBtn.addEventListener('click', () => {
+      clearCacheBtn.textContent = 'Cleared!';
+      setTimeout(() => clearCacheBtn.textContent = 'Clear Cache', 2000);
+    });
+  }
+</script>
+
+
+</body></html>

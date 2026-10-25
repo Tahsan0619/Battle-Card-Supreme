@@ -1,0 +1,452 @@
+[
+  {
+    "card_id": "c_brine_ward",
+    "name": "Brine Ward",
+    "asset": "assets/art/portraits/c_brine_ward.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_ember_pike",
+    "name": "Ember Pike",
+    "asset": "assets/art/portraits/c_ember_pike.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_reed_chorus",
+    "name": "Reed Chorus",
+    "asset": "assets/art/portraits/c_reed_chorus.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_night_pin",
+    "name": "Night Pin",
+    "asset": "assets/art/portraits/c_night_pin.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_spark_novice",
+    "name": "Spark Novice",
+    "asset": "assets/art/portraits/c_spark_novice.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_slate_clerk",
+    "name": "Slate Clerk",
+    "asset": "assets/art/portraits/c_slate_clerk.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_dust_skipper",
+    "name": "Dust Skipper",
+    "asset": "assets/art/portraits/c_dust_skipper.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_coil_apprentice",
+    "name": "Coil Apprentice",
+    "asset": "assets/art/portraits/c_coil_apprentice.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_iron_pail",
+    "name": "Iron Pail",
+    "asset": "assets/art/portraits/c_iron_pail.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_yellow_fuse",
+    "name": "Yellow Fuse",
+    "asset": "assets/art/portraits/c_yellow_fuse.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_balm_twin",
+    "name": "Balm Twin",
+    "asset": "assets/art/portraits/c_balm_twin.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "c_cinder_scout",
+    "name": "Cinder Scout",
+    "asset": "assets/art/portraits/c_cinder_scout.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_mist_suture",
+    "name": "Mist Suture",
+    "asset": "assets/art/portraits/uc_mist_suture.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_glass_runner",
+    "name": "Glass Runner",
+    "asset": "assets/art/portraits/uc_glass_runner.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_bulwark_lynn",
+    "name": "Bulwark Lynn",
+    "asset": "assets/art/portraits/uc_bulwark_lynn.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_hex_latch",
+    "name": "Hex Latch",
+    "asset": "assets/art/portraits/uc_hex_latch.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_veil_knife",
+    "name": "Veil Knife",
+    "asset": "assets/art/portraits/uc_veil_knife.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_anvil_choir",
+    "name": "Anvil Choir",
+    "asset": "assets/art/portraits/uc_anvil_choir.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_map_wick",
+    "name": "Map Wick",
+    "asset": "assets/art/portraits/uc_map_wick.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_echo_pupil",
+    "name": "Echo Pupil",
+    "asset": "assets/art/portraits/uc_echo_pupil.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_gale_stitch",
+    "name": "Gale Stitch",
+    "asset": "assets/art/portraits/uc_gale_stitch.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "uc_rim_raider",
+    "name": "Rim Raider",
+    "asset": "assets/art/portraits/uc_rim_raider.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_kairo_ren",
+    "name": "Kairo Ren",
+    "asset": "assets/art/portraits/r_kairo_ren.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_lyra_stormveil",
+    "name": "Lyra Stormveil",
+    "asset": "assets/art/portraits/r_lyra_stormveil.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_bastion_ore",
+    "name": "Bastion Ore",
+    "asset": "assets/art/portraits/r_bastion_ore.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_sable_flute",
+    "name": "Sable Flute",
+    "asset": "assets/art/portraits/r_sable_flute.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_crimson_ledger",
+    "name": "Crimson Ledger",
+    "asset": "assets/art/portraits/r_crimson_ledger.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_quill_raze",
+    "name": "Quill Raze",
+    "asset": "assets/art/portraits/r_quill_raze.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_hop_mirage",
+    "name": "Hop Mirage",
+    "asset": "assets/art/portraits/r_hop_mirage.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "r_loom_wisp",
+    "name": "Loom Wisp",
+    "asset": "assets/art/portraits/r_loom_wisp.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_astra_veyron",
+    "name": "Astra Veyron",
+    "asset": "assets/art/portraits/sr_astra_veyron.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_quill_tactician",
+    "name": "Quill Tactician",
+    "asset": "assets/art/portraits/sr_quill_tactician.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_obsidian_mire",
+    "name": "Obsidian Mire",
+    "asset": "assets/art/portraits/sr_obsidian_mire.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_gilded_saw",
+    "name": "Gilded Saw",
+    "asset": "assets/art/portraits/sr_gilded_saw.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_haven_bell",
+    "name": "Haven Bell",
+    "asset": "assets/art/portraits/sr_haven_bell.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "sr_zephyr_fang",
+    "name": "Zephyr Fang",
+    "asset": "assets/art/portraits/sr_zephyr_fang.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "e_mirror_host",
+    "name": "Mirror Host",
+    "asset": "assets/art/portraits/e_mirror_host.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "e_iron_psalm",
+    "name": "Iron Psalm",
+    "asset": "assets/art/portraits/e_iron_psalm.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "e_violet_auditor",
+    "name": "Violet Auditor",
+    "asset": "assets/art/portraits/e_violet_auditor.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "e_thorn_cantor",
+    "name": "Thorn Cantor",
+    "asset": "assets/art/portraits/e_thorn_cantor.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "e_black_relay",
+    "name": "Black Relay",
+    "asset": "assets/art/portraits/e_black_relay.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "l_sol_archon",
+    "name": "Sol Archon",
+    "asset": "assets/art/portraits/l_sol_archon.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "l_mare_absolver",
+    "name": "Mare Absolver",
+    "asset": "assets/art/portraits/l_mare_absolver.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "l_crown_of_cinders",
+    "name": "Crown of Cinders",
+    "asset": "assets/art/portraits/l_crown_of_cinders.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "l_silent_congress",
+    "name": "Silent Congress",
+    "asset": "assets/art/portraits/l_silent_congress.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "m_null_seraph",
+    "name": "Null Seraph",
+    "asset": "assets/art/portraits/m_null_seraph.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "m_aurora_lattice",
+    "name": "Aurora Lattice",
+    "asset": "assets/art/portraits/m_aurora_lattice.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "m_warden_infinite",
+    "name": "Warden Infinite",
+    "asset": "assets/art/portraits/m_warden_infinite.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "s_aether_sovereign",
+    "name": "Aether Sovereign",
+    "asset": "assets/art/portraits/s_aether_sovereign.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  },
+  {
+    "card_id": "s_first_fracture",
+    "name": "First Fracture",
+    "asset": "assets/art/portraits/s_first_fracture.png",
+    "tool": "Cursor GenerateImage",
+    "date": "2026-10-26",
+    "license_note": "Generated for Battle Card Supreme original IP; retain for commercial-rights review before store release.",
+    "style": "anime-inspired original portrait 3:4"
+  }
+]

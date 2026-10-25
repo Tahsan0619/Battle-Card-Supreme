@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-primary bg-surface-container-high/60 rounded-lg border border-primary/20 active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><img alt="Aetherium Rift Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-wide uppercase truncate max-w-[160px]">Live Tactical Duel</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full relative select-none pb-2">
+<!-- Dynamic Atmospheric Glow Background -->
+<div class="fixed inset-0 pointer-events-none -z-10 bg-radial from-primary/10 via-transparent to-surface-container-lowest/80"></div>
+<!-- Top Battle Header Telemetry -->
+<div class="w-full px-margin-mobile pt-space-xs pb-space-sm flex flex-col gap-space-xs bg-surface-container-low/95 shadow-md backdrop-blur-md">
+<!-- Turn Ribbon & Match Directives -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative flex items-center px-space-sm py-0.5 rounded-lg bg-secondary-container/20 overflow-hidden shadow-sm">
+<span class="absolute inset-0 bg-secondary/10 animate-pulse"></span>
+<span class="material-symbols-outlined text-secondary text-[14px] mr-1" style="font-variation-settings: 'FILL' 1;">swords</span>
+<span class="font-label-tactical text-label-tactical text-secondary font-bold tracking-wider uppercase">TURN 4 • PLAYER PHASE</span>
+</div>
+</div>
+<!-- Tactical Toggle Buttons -->
+<div class="flex items-center gap-space-xs">
+<button class="h-7 px-space-xs rounded-lg bg-surface-container-highest active:scale-95 transition-transform flex items-center gap-0.5 shadow-sm" id="speed-btn" onclick="toggleSpeed()">
+<span class="font-label-micro text-label-micro text-on-surface-variant">SPD</span>
+<span class="font-label-numeric text-label-tactical text-primary font-bold" id="speed-val">2x</span>
+</button>
+<button class="h-7 px-space-xs rounded-lg bg-surface-container-highest active:scale-95 transition-transform flex items-center gap-0.5 shadow-sm" id="auto-btn" onclick="toggleAuto()">
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">smart_toy</span>
+<span class="font-label-micro text-label-micro text-outline uppercase" id="auto-val">OFF</span>
+</button>
+<button class="w-7 h-7 rounded-lg bg-surface-container-highest active:scale-95 transition-transform flex items-center justify-center shadow-sm text-error">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+</button>
+</div>
+</div>
+<!-- Opponent Boss Banner: Rift Inquisitor Malakor -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-sm shadow-md flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-error-container/20 to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-error-container text-on-error-container font-label-micro text-label-micro font-bold">LV.65 BOSS</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-wide truncate max-w-[170px]">Malakor, Rift Inquisitor</h2>
+</div>
+<!-- Status Debuffs -->
+<div class="flex items-center gap-1">
+<div class="w-5 h-5 rounded-DEFAULT bg-tertiary-container/30 flex items-center justify-center shadow-sm" title="Vulnerable -25% DEF">
+<span class="material-symbols-outlined text-tertiary text-[12px]">shield_with_heart</span>
+</div>
+<div class="w-5 h-5 rounded-DEFAULT bg-error-container/40 flex items-center justify-center shadow-sm" title="Burn 850 DMG/turn">
+<span class="material-symbols-outlined text-error text-[12px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="w-5 h-5 rounded-DEFAULT bg-secondary-container/30 flex items-center justify-center shadow-sm" title="Stun 1 Turn">
+<span class="material-symbols-outlined text-secondary text-[12px]">bolt</span>
+</div>
+</div>
+</div>
+<!-- Boss Vitality Gauges: Shield & Main HP -->
+<div class="flex flex-col gap-1 w-full">
+<div class="flex justify-between items-center text-[10px] font-label-numeric">
+<span class="text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+            12,000 SHIELD
+          </span>
+<span class="text-on-surface-variant font-bold">84,500 <span class="text-outline font-normal">/ 120,000 HP</span></span>
+</div>
+<!-- Multi-layer Health Track -->
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex relative shadow-inner">
+<div class="h-full bg-error rounded-full transition-all duration-300" style="width: 70.4%;"></div>
+<div class="h-full bg-secondary absolute top-0 left-0 rounded-full opacity-80" style="width: 14.2%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Central Combat Arena & Enemy Formations -->
+<div class="relative w-full px-margin-mobile pt-space-sm pb-space-xs flex flex-col items-center">
+<!-- Collapsible Tactical Combat Log Floating Toggle & Flyout -->
+<div class="absolute left-margin-mobile top-space-sm z-20 flex flex-col items-start">
+<button class="h-6 px-2 rounded-full bg-surface-container-highest/90 backdrop-blur-md text-on-surface text-label-micro font-label-micro flex items-center gap-1 shadow-md active:scale-95 transition-transform" onclick="toggleCombatLog()">
+<span class="material-symbols-outlined text-[13px] text-primary">history_edu</span>
+<span>COMBAT LOG</span>
+</button>
+<div class="mt-1 w-56 rounded-lg bg-surface-container-lowest/95 backdrop-blur-md p-space-xs shadow-xl flex flex-col gap-1 transition-all duration-200" id="combat-log-drawer">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-0.5">
+<span class="font-label-micro text-label-micro text-outline font-bold uppercase">Latest Actions</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+<span class="text-secondary font-semibold">[Lyra]</span> cast <span class="text-primary font-medium">Tempest Lance</span>
+</p>
+<p class="font-body-sm text-body-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">flash_on</span>
+          -4,850 CRIT DMG to Malakor
+        </p>
+<p class="font-body-sm text-body-sm text-secondary font-medium">
+          [Astra] activated Bastion Field (+1,200)
+        </p>
+</div>
+</div>
+<!-- Floating Combat Telemetry Floating Feedback -->
+<div class="absolute top-12 right-12 z-30 pointer-events-none flex flex-col items-center gap-1 animate-bounce">
+<div class="px-2 py-0.5 rounded-md bg-surface-container-lowest/90 backdrop-blur-md shadow-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold tracking-tight">-4,850 CRIT!</span>
+</div>
+<div class="px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-tactical text-label-tactical font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">add_moderator</span>
+        +1,200 SHIELD
+      </div>
+</div>
+<!-- Opponent Formations: 3-Target Row -->
+<div class="w-full grid grid-cols-3 gap-space-xs items-end justify-center min-h-[148px]">
+<!-- Minion Left: Void Sentinel Alpha -->
+<div class="w-full rounded-xl bg-surface-container-low p-1.5 flex flex-col items-center gap-1 shadow-sm opacity-90 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Dark ethereal anime armored void automaton with glowing purple chest core and obsidian jagged spear, dramatic moody dark fantasy battle lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBynnqsxgwVooI5U5j3ZuZs2Ifkz4yplXpw6aEbPktPV6nckLF2UwljophyRCLd7RqlbLbvp5jaZyK6VgUfOWsMmTgI-R81y8ZwqkVxvWqHbigdR1Ka1_xA61aFtwo3QiLQ21FiMNCpo8fJOVOImTyVr4F57zSoomNjgfrQuQplS9ffcq4bLQIMY_yDKts2WXTamO60UYe-2ZA4ldviGOga-NppthD-B42kK6faZgD2xqAS2IhAimgh"/>
+<div class="absolute top-1 left-1 px-1 rounded-DEFAULT bg-surface-container-highest/90 text-[8px] font-label-micro text-secondary font-bold">VOID</div>
+<div class="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-[9px] font-label-numeric text-on-surface">1</div>
+</div>
+<div class="w-full flex flex-col gap-0.5">
+<div class="flex justify-between items-center text-[9px] font-label-micro">
+<span class="truncate text-on-surface-variant font-medium">Sentinel α</span>
+<span class="text-outline">18.5k</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 62%;"></div>
+</div>
+</div>
+</div>
+<!-- Center Opponent: Boss Malakor (Target Locked) -->
+<div class="w-full rounded-xl bg-surface-container-high p-1.5 flex flex-col items-center gap-1 shadow-xl relative scale-105 z-10 cursor-pointer">
+<!-- Targeting Reticle Overlay Indicator -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-error text-on-error shadow-lg animate-pulse z-20">
+<span class="material-symbols-outlined text-[12px]">adjust</span>
+<span class="font-label-micro text-label-micro font-bold uppercase tracking-wider">TARGET</span>
+</div>
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-lowest shadow-md">
+<img class="w-full h-full object-cover" data-alt="Ominous anime dark inquisitor lord in sleek obsidian runic cloak holding a crackling void rapier with glowing crimson anime eyes, intense dark fantasy duel composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQWT5EpJBAoFt596AYYGTJRKmGNJXukec10Qw1bGQnUdcKBiFZJV1gxMg__10fKG_oIH4TeOGQcqaMd0uW5u3pbNv5ABtSU7mI_pKYxfljGjlomMtOeI8BsfrmxsMjDox5P94-VemMRy0tuj6rWbTtmK9sajhimEHIlJsYUAKhHf1gLXzcameu31y5unjHkeNrQ8rkrphY2tPFQ7ZNl_68tA1zSu4Yq32Pgqg4pk5Z8_haW93Zf2xn"/>
+<!-- Crosshair corner brackets -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-error/80 text-4xl drop-shadow-md">filter_center_focus</span>
+</div>
+<div class="absolute top-1 left-1 px-1.5 py-0.5 rounded-DEFAULT bg-error-container text-[8px] font-label-micro text-on-error-container font-bold">ABYSS</div>
+<div class="absolute bottom-1 left-1 px-1 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 text-[8px] font-label-micro text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[9px]">warning</span> INTENT: AOE
+          </div>
+</div>
+<div class="w-full flex flex-col gap-0.5">
+<div class="flex justify-between items-center text-[10px] font-label-micro font-bold">
+<span class="truncate text-on-surface">Malakor</span>
+<span class="text-error">70%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-error to-tertiary rounded-full" style="width: 70.4%;"></div>
+</div>
+</div>
+</div>
+<!-- Minion Right: Void Sentinel Beta -->
+<div class="w-full rounded-xl bg-surface-container-low p-1.5 flex flex-col items-center gap-1 shadow-sm opacity-90 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Sinister anime void drone warrior forged from dark crystalline minerals with glowing cyan energy joints in dark dungeon fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFNx74RyznkWccaSuO2gXGayF33uLFGIkCjELFN0YdC_X_fg_akFVEHhEDZIyTHeWaHkcCHFEnEPiVUfSiHE8N5gABKYy4YNDbXXMOgRvYZ75GnomDUFN2cZM7frQ7GhUM088SJtgvs5h8_IkgBGzjiye9FxxIsNS_B2JKfAGYYWD-NPvpLSRAFy3gGoOb0FinflWWTC36aUY8Rzer4G7LmYVMVF_QDvOxX2yd-2aRCLn8wgWvgcKW"/>
+<div class="absolute top-1 left-1 px-1 rounded-DEFAULT bg-surface-container-highest/90 text-[8px] font-label-micro text-secondary font-bold">VOID</div>
+<div class="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-[9px] font-label-numeric text-on-surface">2</div>
+</div>
+<div class="w-full flex flex-col gap-0.5">
+<div class="flex justify-between items-center text-[9px] font-label-micro">
+<span class="truncate text-on-surface-variant font-medium">Sentinel β</span>
+<span class="text-outline">24.0k</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stage Divider Runic Energy Leyline -->
+<div class="w-full px-margin-mobile my-1 flex items-center justify-center gap-2">
+<div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<span class="material-symbols-outlined text-primary/40 text-[14px]">auto_awesome</span>
+<div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+</div>
+<!-- Lower Player Frontline (4 Battle Deployments) -->
+<div class="w-full px-margin-mobile flex flex-col gap-1">
+<div class="flex items-center justify-between px-0.5">
+<span class="font-label-micro text-label-micro text-on-surface-variant font-bold uppercase tracking-wider">Player Vanguard Formation</span>
+<span class="font-label-micro text-label-micro text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">security</span>
+        FORMATION ACTIVE
+      </span>
+</div>
+<!-- 4 Compact Frontline Battle Cards Grid -->
+<div class="grid grid-cols-4 gap-space-xs items-stretch">
+<!-- Hero 1: Astra Veyron (Selected Active Unit) -->
+<div class="unit-card active rounded-xl bg-surface-container-high p-1 flex flex-col gap-1 shadow-lg relative cursor-pointer transition-transform duration-150" onclick="selectUnit(this)">
+<!-- Active Selection Glow Pip -->
+<div class="absolute -top-1 right-1 w-2.5 h-2.5 rounded-full bg-secondary shadow-md animate-ping"></div>
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Noble female anime cybernetic paladin knight in glowing white and cyan runic plate armor holding an azure crystalline greatshield, dramatic game portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXOJO7WnuKJNZvn7iBvLEd7oofshBkklY4Tx-F_N3t7RonrSimatjWNhMsZizjaIllK_QpnpaR9DawiJKKIor7d69vWhUrm9uaYLQsNUrH0yfmAIF6ubQD-k2nwQq39PtioFBnZQMHzGMhFkecurqQmBvrVgVvX3hahTuHazDC0M05hWgeGliQOhSA42SujkBCtM8nBw00KJik7Y5e92w1o16t2MGiN9AkZFX3KBs2t6HYyUpccmdX"/>
+<!-- Taunt Shield Badge -->
+<div class="absolute top-1 left-1 px-1 py-0.5 rounded-DEFAULT bg-secondary-container/90 text-on-secondary-container text-[8px] font-label-micro font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[9px]" style="font-variation-settings: 'FILL' 1;">shield</span> TAUNT
+          </div>
+<div class="absolute bottom-1 right-1 px-1 rounded-DEFAULT bg-surface-container-lowest/80 text-[8px] font-label-numeric text-on-surface font-bold">POS 1</div>
+</div>
+<div class="flex flex-col gap-0.5 w-full">
+<span class="font-label-tactical text-label-micro text-on-surface font-bold truncate">Astra</span>
+<div class="h-1.5 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 87.8%;"></div>
+</div>
+<span class="font-label-micro text-[8px] text-on-surface-variant text-right">16.2k HP</span>
+</div>
+</div>
+<!-- Hero 2: Kairo Ren -->
+<div class="unit-card rounded-xl bg-surface-container-low p-1 flex flex-col gap-1 shadow-sm opacity-90 cursor-pointer active:scale-95 transition-transform duration-150" onclick="selectUnit(this)">
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Agile male anime shadow rogue assassin with silver spiky hair and glowing dual violet daggers in dark misty combat stance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvB7_vNUH6l3XsYvCNFI5dbeZy5dQkcILpEYG9QtpgXl3DPM3skVgpxrfWZDCKKgqP7s2Lc7Qv2xa9wiix2JDuORNvIfDvv00OsnhBiAHi5kdh2FzZPdPmmsh4UEsjXFX2Y_dtxRpaKuy8jQY_k1QygUZl5dLhUWbG9PgTCE8-9YE0zR2D8008FYkp3hV3z4oiKWto-3yOpVPOzdDGkNk0qK7swLtD5q-UbYGfc2BvU8e4jUnxSYnn"/>
+<!-- Stealth Buff -->
+<div class="absolute top-1 left-1 px-1 py-0.5 rounded-DEFAULT bg-primary-container/90 text-on-primary-container text-[8px] font-label-micro font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[9px]">visibility_off</span> STL
+          </div>
+<div class="absolute bottom-1 right-1 px-1 rounded-DEFAULT bg-surface-container-lowest/80 text-[8px] font-label-numeric text-on-surface font-bold">POS 2</div>
+</div>
+<div class="flex flex-col gap-0.5 w-full">
+<span class="font-label-tactical text-label-micro text-on-surface-variant font-bold truncate">Kairo</span>
+<div class="h-1.5 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 83.9%;"></div>
+</div>
+<span class="font-label-micro text-[8px] text-outline text-right">9.4k HP</span>
+</div>
+</div>
+<!-- Hero 3: Lyra Stormveil -->
+<div class="unit-card rounded-xl bg-surface-container-low p-1 flex flex-col gap-1 shadow-sm opacity-90 cursor-pointer active:scale-95 transition-transform duration-150" onclick="selectUnit(this)">
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Brilliant female anime thunder sorceress with floating golden runic staff and crackling storm electricity sparks swirling around her hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxemumfYcAFVTeM_bM7bJLHtPq2h86LOAyRO88aFM2B-E7oxM28tt3wb3L9O9uCnZk3rA5Wtut0EWZ1RmK6WKDxL7PbG6ONWE54B1mPpIXUqB2VXseZMelviFbcB_NxBLkvRZa46Q9whgyXOxHrrcEfyFc7uOGMNIWFYjdAe6_Q7oxu3Oj_ZEB7h9cVM9dxPw5UVJ26a5u2wLwPWMaXmA09HmhnGuIcRaFfez_UtVe8HUAJApoSph9"/>
+<!-- Overload Charge 2/3 -->
+<div class="absolute top-1 left-1 px-1 py-0.5 rounded-DEFAULT bg-tertiary-container/90 text-on-tertiary-container text-[8px] font-label-micro font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[9px]">bolt</span> 2/3
+          </div>
+<div class="absolute bottom-1 right-1 px-1 rounded-DEFAULT bg-surface-container-lowest/80 text-[8px] font-label-numeric text-on-surface font-bold">POS 3</div>
+</div>
+<div class="flex flex-col gap-0.5 w-full">
+<span class="font-label-tactical text-label-micro text-on-surface-variant font-bold truncate">Lyra</span>
+<div class="h-1.5 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 91.7%;"></div>
+</div>
+<span class="font-label-micro text-[8px] text-outline text-right">7.8k HP</span>
+</div>
+</div>
+<!-- Hero 4: Mirelle Ashwyn -->
+<div class="unit-card rounded-xl bg-surface-container-low p-1 flex flex-col gap-1 shadow-sm opacity-90 cursor-pointer active:scale-95 transition-transform duration-150" onclick="selectUnit(this)">
+<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Serene anime priestess healer with emerald and gold vestments channeling sacred life blossoms and healing radiance orbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW9Ly9iGNFalVL_shuhr2cW1SmxRtljrXCIgEy8DTnRE-CaWSCQdx7w-WLIDzc5Yyf1KkFCl386iUiIEqRLHotxOVzoMiKHX6aeS0zGVM4sNe6EfSFqmFfXkeepz4n5mmEGGAfhMKC4oSG3s5TNLd-KwehwnB8Kp1ms2-LwDwgZeiaV4Yg6sTmy0mJyOyj36Ps79oF_Vl5Vj3Rj9cc3Oqf_EiQQ_3ke02JUns2XOrbi70t2QeJ0BwX"/>
+<!-- Heal Aura -->
+<div class="absolute top-1 left-1 px-1 py-0.5 rounded-DEFAULT bg-secondary-container/90 text-on-secondary-container text-[8px] font-label-micro font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[9px]" style="font-variation-settings: 'FILL' 1;">spa</span> REGEN
+          </div>
+<div class="absolute bottom-1 right-1 px-1 rounded-DEFAULT bg-surface-container-lowest/80 text-[8px] font-label-numeric text-on-surface font-bold">POS 4</div>
+</div>
+<div class="flex flex-col gap-0.5 w-full">
+<span class="font-label-tactical text-label-micro text-on-surface-variant font-bold truncate">Mirelle</span>
+<div class="h-1.5 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 68.8%;"></div>
+</div>
+<span class="font-label-micro text-[8px] text-outline text-right">6.2k HP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Player Tactical Action Deck Panel -->
+<div class="w-full mt-2 px-margin-mobile flex flex-col gap-space-xs bg-surface-container-lowest/95 rounded-t-xl pt-space-sm pb-1 shadow-2xl">
+<!-- Energy Resource Bar: Mana Crystals & Unit Cue -->
+<div class="flex items-center justify-between px-0.5">
+<!-- Mana Gauge -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-micro text-label-micro text-secondary font-bold tracking-wider uppercase">MANA</span>
+<div class="flex items-center gap-1">
+<!-- 4 Active Mana Orbs -->
+<div class="w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_8px_rgba(76,215,246,0.8)]">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+<div class="w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_8px_rgba(76,215,246,0.8)]">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+<div class="w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_8px_rgba(76,215,246,0.8)]">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+<div class="w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_8px_rgba(76,215,246,0.8)]">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+<!-- 2 Depleted Mana Slots -->
+<div class="w-4 h-4 rounded-full bg-surface-container-high border-0 flex items-center justify-center opacity-40"></div>
+<div class="w-4 h-4 rounded-full bg-surface-container-high border-0 flex items-center justify-center opacity-40"></div>
+</div>
+<span class="font-label-numeric text-label-tactical text-on-surface font-bold ml-1">4<span class="text-outline font-normal">/6</span></span>
+</div>
+<!-- Selected Active Hero Indicator -->
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-micro text-label-micro text-on-surface font-semibold uppercase">ASTRA VEYRON</span>
+</div>
+</div>
+<!-- Tactical Skill Selection Tray (Horizontal Row) -->
+<div class="grid grid-cols-3 gap-space-xs w-full">
+<!-- Skill 1: Basic Strike (0 Cost) -->
+<button class="h-20 rounded-xl bg-surface-container p-2 flex flex-col justify-between text-left active:scale-95 transition-transform shadow-md hover:bg-surface-container-high" onclick="triggerSkillFeedback('Void Slash executed! -1,400 DMG')">
+<div class="flex items-start justify-between w-full">
+<div class="w-6 h-6 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-surface">swords</span>
+</div>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-[10px] font-label-numeric text-on-surface-variant font-bold">0 AP</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold truncate">Void Slash</span>
+<span class="font-body-sm text-[10px] text-outline truncate">1,400 Phys DMG</span>
+</div>
+</button>
+<!-- Skill 2: Active Skill (2 Cost) -->
+<button class="h-20 rounded-xl bg-surface-container p-2 flex flex-col justify-between text-left active:scale-95 transition-transform shadow-md hover:bg-surface-container-high" onclick="triggerSkillFeedback('Event Horizon Ward cast! +4,200 Shields to party')">
+<div class="flex items-start justify-between w-full">
+<div class="w-6 h-6 rounded-lg bg-secondary-container/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-secondary-container text-[10px] font-label-numeric text-on-secondary-container font-bold">2 AP</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tactical text-label-tactical text-on-surface font-bold truncate">Event Horizon</span>
+<span class="font-body-sm text-[10px] text-secondary truncate">+4,200 All Shield</span>
+</div>
+</button>
+<!-- Skill 3: ULTIMATE BURST (Ready 100%!) -->
+<button class="h-20 rounded-xl bg-gradient-to-br from-primary-container via-inverse-primary to-surface-container-highest p-2 flex flex-col justify-between text-left active:scale-95 transition-transform shadow-lg relative overflow-hidden group" onclick="triggerSkillFeedback('SINGULARITY FORTRESS UNLEASHED!')">
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary-fixed-dim/20 via-transparent to-primary/30 animate-pulse pointer-events-none"></div>
+<div class="flex items-start justify-between w-full relative z-10">
+<div class="w-6 h-6 rounded-lg bg-tertiary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container animate-spin" style="animation-duration: 4s;">all_inclusive</span>
+</div>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-tertiary-fixed text-[9px] font-label-micro text-on-tertiary-fixed font-bold tracking-tight uppercase shadow-sm">BURST READY</span>
+</div>
+<div class="flex flex-col relative z-10">
+<span class="font-label-tactical text-label-tactical text-on-primary font-bold truncate">Singularity Fortress</span>
+<span class="font-body-sm text-[10px] text-tertiary-fixed font-semibold truncate">Taunt & Cataclysm</span>
+</div>
+</button>
+</div>
+<!-- Bottom Command Execution Row & End Turn -->
+<div class="flex items-center gap-space-sm pt-1">
+<!-- Tactical Pass / Defense Stance -->
+<button class="h-12 px-space-md rounded-xl bg-surface-container flex items-center justify-center gap-1.5 text-on-surface active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">shield</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold">GUARD</span>
+</button>
+<!-- END TURN Button with 18s Dynamic Timer Bar -->
+<button class="flex-1 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex flex-col justify-center items-center relative overflow-hidden active:scale-98 transition-transform shadow-lg" onclick="endTurnAction()">
+<div class="flex items-center justify-center gap-1.5 z-10">
+<span class="font-headline-sm text-headline-sm font-bold tracking-wider uppercase">END TURN</span>
+<span class="material-symbols-outlined text-[18px]">double_arrow</span>
+</div>
+<div class="flex items-center justify-center gap-1 z-10 -mt-0.5">
+<span class="material-symbols-outlined text-[11px]">timer</span>
+<span class="font-label-micro text-label-micro font-bold" id="turn-timer-text">18s remaining</span>
+</div>
+<!-- Depleting turn progress bar -->
+<div class="absolute bottom-0 left-0 h-1 bg-on-secondary-container/40 w-full transition-all duration-1000" id="turn-timer-bar"></div>
+</button>
+</div>
+</div>
+<!-- Interactive Feedback Snack Notification Banner -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-opacity duration-200 px-4 py-2 rounded-full bg-surface-container-highest/95 backdrop-blur-md shadow-2xl flex items-center gap-2" id="action-toast">
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+<span class="font-label-tactical text-label-tactical text-on-surface font-semibold" id="toast-msg">Action registered</span>
+</div>
+</div>
+<script>
+  // Simple Micro-interactions for game interface telemetry
+  let currentSpeed = 2;
+  function toggleSpeed() {
+    currentSpeed = currentSpeed === 1 ? 2 : (currentSpeed === 2 ? 3 : 1);
+    const spdEl = document.getElementById('speed-val');
+    if (spdEl) spdEl.innerText = currentSpeed + 'x';
+    showToast('Battle Speed set to ' + currentSpeed + 'x');
+  }
+
+  let autoMode = false;
+  function toggleAuto() {
+    autoMode = !autoMode;
+    const autoVal = document.getElementById('auto-val');
+    const autoBtn = document.getElementById('auto-btn');
+    if (autoVal && autoBtn) {
+      if (autoMode) {
+        autoVal.innerText = 'ON';
+        autoVal.className = 'font-label-micro text-label-micro text-secondary font-bold uppercase';
+        showToast('Auto-Battle Activated');
+      } else {
+        autoVal.innerText = 'OFF';
+        autoVal.className = 'font-label-micro text-label-micro text-outline uppercase';
+        showToast('Auto-Battle Deactivated');
+      }
+    }
+  }
+
+  function toggleCombatLog() {
+    const log = document.getElementById('combat-log-drawer');
+    if (log) {
+      log.classList.toggle('hidden');
+    }
+  }
+
+  function selectUnit(element) {
+    document.querySelectorAll('.unit-card').forEach(card => {
+      card.classList.remove('active', 'scale-102', 'bg-surface-container-high');
+      card.classList.add('bg-surface-container-low', 'opacity-90');
+    });
+    element.classList.add('active', 'scale-102', 'bg-surface-container-high');
+    element.classList.remove('bg-surface-container-low', 'opacity-90');
+    showToast('Switched to vanguard hero');
+  }
+
+  function triggerSkillFeedback(message) {
+    showToast(message);
+  }
+
+  function endTurnAction() {
+    showToast('Ending Player Turn... Enemy Phase starting');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('action-toast');
+    const toastMsg = document.getElementById('toast-msg');
+    if (toast && toastMsg) {
+      toastMsg.innerText = msg;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 1800);
+    }
+  }
+
+  // Turn timer decrement simulation
+  let secondsLeft = 18;
+  setInterval(() => {
+    if (secondsLeft > 0) {
+      secondsLeft--;
+      const timerText = document.getElementById('turn-timer-text');
+      const timerBar = document.getElementById('turn-timer-bar');
+      if (timerText) timerText.innerText = secondsLeft + 's remaining';
+      if (timerBar) timerBar.style.width = ((secondsLeft / 18) * 100) + '%';
+    }
+  }, 1000);
+</script></main></body></html>

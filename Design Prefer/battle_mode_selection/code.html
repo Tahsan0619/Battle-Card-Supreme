@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#958ea0", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "inverse-on-surface": "#2d303a", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "background": "#10131c", "primary": "#d0bcff", "on-surface": "#e0e2ef", "surface-bright": "#363943", "primary-fixed": "#e9ddff", "on-background": "#e0e2ef", "primary-fixed-dim": "#d0bcff", "surface-container": "#1c1f29", "surface-tint": "#d0bcff", "on-tertiary": "#472a00", "surface-container-lowest": "#0b0e17", "surface-container-low": "#181b25", "surface": "#10131c", "on-tertiary-container": "#3e2400", "secondary-fixed": "#acedff", "inverse-primary": "#6d3bd7", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-container": "#00424e", "inverse-surface": "#e0e2ef", "secondary-fixed-dim": "#4cd7f6", "on-secondary-fixed-variant": "#004e5c", "on-primary-container": "#340080", "error-container": "#93000a", "on-secondary": "#003640", "surface-container-highest": "#32343f", "surface-variant": "#32343f", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#272a34", "on-primary": "#3c0091", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-tertiary-fixed-variant": "#653e00", "on-error-container": "#ffdad6", "surface-dim": "#10131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.5rem", "margin-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "0.75rem" }, fontFamily: { "display-hero": ["Space Grotesk"], "label-micro": ["Plus Jakarta Sans"], "display-hero-mobile": ["Space Grotesk"], "label-tactical": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Space Grotesk"], "label-numeric": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-micro": ["9px", { "lineHeight": "11px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-tactical": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.0em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0 flex-shrink-0"><img alt="Aetherium Rift Emblem" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WLkri9fX9K_wYodQzAr4SWJ8_pUphasiAbtqdedB-zPtoEHeTVNzdwpxl7buf_pR1m7H_x4oWI4PxJlQ8W_qQWwS0HDRi0Onafzu91YKlVWSl4eCKCli_K1h8m7xaaAP5mwUrN_JTDx27XiZlDBKoL7BoyvG76LWsgCLuAuJA3ItyV_mpmwYId20WU1l3wsM7dehJkh2xL0TAKZeNS5aA7r2r37fCjOFYPQ1ebe63cbjLNDcJhUrL-yQ"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none truncate">Aetherium Rift</span><span class="font-label-micro text-label-micro text-secondary font-semibold uppercase tracking-wider mt-0.5">Lv.42 Commander</span></div></div><div class="flex items-center gap-space-xs overflow-x-hidden py-1"><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-secondary/20 shadow-[0_0_8px_rgba(76,215,246,0.15)]"><span class="material-symbols-outlined text-secondary text-[16px]">diamond</span><span class="font-label-tactical text-label-tactical text-on-surface">1,450</span></div><div class="flex items-center gap-1 bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-tertiary/20 shadow-[0_0_8px_rgba(255,185,95,0.15)]"><span class="material-symbols-outlined text-tertiary text-[16px]">monetization_on</span><span class="font-label-tactical text-label-tactical text-on-surface">84.2K</span></div><div class="hidden xs:flex flex-col items-center bg-surface-container-high/90 px-space-xs py-0.5 rounded-lg border border-primary/20"><div class="flex items-center gap-0.5"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span><span class="font-label-tactical text-label-tactical text-on-surface">88/120</span></div><span class="font-label-micro text-label-micro text-on-surface-variant leading-none">04:12</span></div></div><div class="relative flex-shrink-0 ml-1"><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary to-secondary shadow-[0_0_10px_rgba(208,188,255,0.4)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3I6F-apmMR6bSYaZkAzfV43160NZMgRt62PVezdleWdv9G8XR8FhsCJEWCwBO6zI8F96vDgz3bVqOGNk1JrfkHvpQcebwJPZ0xFptQq6j1JyuEgMPTcO2QKuNSO0m6at88Q08kU9ptNbljM6XJ5mLzVotvoG49sGph6BzmF4Ci9Sng-DAzCTY7UGEJc2MLWBMu2Fx6wLvpkbfNjHbL-075OuAB4grCLshCABHMQi3AbteKCsyOyoA"/></div><span class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary font-label-micro text-label-micro px-1 rounded-sm uppercase tracking-tighter font-extrabold">VIP4</span><span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest animate-pulse"></span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface select-none pb-6">
+<!-- Tactical Energy & Season Ribbon -->
+<div class="w-full bg-surface-container-low px-margin-mobile py-space-sm flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-headline-sm text-[13px] tracking-wider uppercase text-secondary font-bold truncate">DIMENSIONAL CRUCIBLE</span>
+<span class="text-on-surface-variant font-label-micro text-label-micro uppercase bg-surface-container-high px-1.5 py-0.5 rounded-sm">SEASON IX</span>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-0.5 rounded-sm">
+<span class="material-symbols-outlined text-secondary text-[14px]">key</span>
+<span class="font-label-numeric text-[11px] text-on-surface">3/3</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-0.5 rounded-sm">
+<span class="material-symbols-outlined text-tertiary text-[14px]">flash_on</span>
+<span class="font-label-numeric text-[11px] text-tertiary font-bold">120/120</span>
+</div>
+</div>
+</div>
+<!-- Interactive Filter Tabs -->
+<div class="w-full px-margin-mobile pt-space-md pb-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5" id="mode-filters">
+<button class="mode-tab-btn flex-shrink-0 px-3.5 py-1.5 rounded-xl bg-primary-container text-on-primary-container font-label-tactical text-label-tactical uppercase tracking-wider shadow-sm transition-all duration-150 active:scale-95 flex items-center gap-1.5" data-filter="all">
+<span class="material-symbols-outlined text-[15px]">grid_view</span>
+        All Modes
+      </button>
+<button class="mode-tab-btn flex-shrink-0 px-3.5 py-1.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-tactical text-label-tactical uppercase tracking-wider shadow-sm transition-all duration-150 active:scale-95 flex items-center gap-1.5" data-filter="pvp">
+<span class="material-symbols-outlined text-[15px]">military_tech</span>
+        Competitive
+      </button>
+<button class="mode-tab-btn flex-shrink-0 px-3.5 py-1.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-tactical text-label-tactical uppercase tracking-wider shadow-sm transition-all duration-150 active:scale-95 flex items-center gap-1.5" data-filter="pve">
+<span class="material-symbols-outlined text-[15px]">skull</span>
+        PvE Incursions
+      </button>
+<button class="mode-tab-btn flex-shrink-0 px-3.5 py-1.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-tactical text-label-tactical uppercase tracking-wider shadow-sm transition-all duration-150 active:scale-95 flex items-center gap-1.5" data-filter="event">
+<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
+        Special Events
+      </button>
+</div>
+</div>
+<!-- Main Content Stage -->
+<div class="flex flex-col gap-space-lg px-margin-mobile pt-space-xs">
+<!-- FEATURED HERO RAID CARD -->
+<div class="mode-card relative w-full rounded-xl bg-surface-container-low overflow-hidden shadow-xl" data-category="pve event">
+<!-- Glow ambient backdrop -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-low/70 to-transparent z-10"></div>
+<!-- Hero Raid Boss Visual -->
+<div class="relative w-full h-52 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transform scale-105 transition-transform duration-700 hover:scale-110" data-alt="An imposing anime dark celestial raid boss archon in ornate obsidian armor, radiating luminous electric violet plasma runes, floating above a shattered starry astral void rift with burning dimensional meteors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuXuopg-7P6_53GOdCbYaGIJTolfivS5K348yqddOr1W_Iij_XaHM5a0eaJjVsJmLsX9YWziCxP8T0s35yGAzyL_enPg89l3w2sVKZoxn0RDNMaJSqr1J3gcYLyYqHvzuQWr98Np1y-yRb8ETCu6-PLfNZI03zBfUhRnmBzlglB2dKXuUzd5qdaX-8juIp2eRkMHeB6Uoxa4hKRmUsjm62U2wPa6lPVnPPd3kO0SXVlokVLBYGOuWH')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/70 via-transparent to-surface-container-lowest z-10"></div>
+<!-- Pulse Badge Status -->
+<div class="absolute top-3 left-3 z-20 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-sm shadow-md">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-tactical text-[11px] text-error font-bold uppercase tracking-wider">LIMITED EVENT</span>
+<span class="text-on-surface-variant font-label-micro text-label-micro">| 18H 42M</span>
+</div>
+<!-- Boss Health Multiplier Badge -->
+<div class="absolute top-3 right-3 z-20 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded-sm shadow-md">
+<span class="material-symbols-outlined text-tertiary text-[15px]">swords</span>
+<span class="font-headline-sm text-[12px] text-tertiary">x100 BARS</span>
+</div>
+<!-- Multi-player Co-op Tag -->
+<div class="absolute bottom-3 left-3 z-20 flex items-center gap-1 bg-surface-container-high/90 backdrop-blur-md px-2 py-0.5 rounded-sm">
+<span class="material-symbols-outlined text-secondary text-[14px]">groups</span>
+<span class="font-label-micro text-label-micro text-secondary font-bold uppercase">1-4 PLAYER CO-OP RAID</span>
+</div>
+</div>
+<!-- Raid Details Container -->
+<div class="relative z-20 p-space-md flex flex-col gap-space-sm -mt-2">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-tactical text-[11px] text-primary tracking-widest uppercase">EPIC WORLD ANOMALY</span>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-0.5 rounded-sm">
+<span class="material-symbols-outlined text-primary text-[13px]">bolt</span>
+<span class="font-label-micro text-label-micro text-on-surface">REQ. PWR: <strong class="text-primary-fixed">48,000+</strong></span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight mt-0.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+            Abyssal Incursion
+          </h2>
+<span class="font-headline-sm text-[14px] text-secondary font-semibold">Malakor the Rift Inquisitor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Harness collaborative runic burst attacks. Break Malakor's Abyssal Shield before the Cataclysmic Rift Devastation spell finishes charging.
+        </p>
+<!-- Mythic Reward Previews -->
+<div class="bg-surface-container-lowest/80 p-2.5 rounded-xl flex items-center justify-between">
+<span class="font-label-micro text-label-micro uppercase text-on-surface-variant font-bold">Clear Rewards</span>
+<div class="flex items-center gap-2">
+<!-- Reward 1 -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<div class="w-5 h-5 rounded-md bg-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[14px]">stars</span>
+</div>
+<span class="font-label-numeric text-[11px] text-tertiary font-bold">SSR Astra</span>
+</div>
+<!-- Reward 2 -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<div class="w-5 h-5 rounded-md bg-secondary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[14px]">diamond</span>
+</div>
+<span class="font-label-numeric text-[11px] text-secondary font-bold">2,500</span>
+</div>
+<!-- Reward 3 -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<div class="w-5 h-5 rounded-md bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">token</span>
+</div>
+<span class="font-label-numeric text-[11px] text-primary font-bold">Sigil</span>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full min-h-[48px] bg-gradient-to-r from-primary-container via-inverse-primary to-secondary-container text-on-primary-fixed rounded-xl flex items-center justify-center gap-2 font-headline-sm text-[15px] uppercase tracking-wider font-bold shadow-[0_4px_16px_rgba(160,120,255,0.4)] active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[20px]">swords</span>
+          DEPLOY SQUAD
+        </button>
+</div>
+</div>
+<!-- SECONDARY MODES LIST -->
+<div class="flex flex-col gap-space-md">
+<!-- MODE 2: CLASSIC CARD CLASH (PVP RANKED) -->
+<div class="mode-card rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-3 relative overflow-hidden" data-category="pvp">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-micro text-label-micro px-1.5 py-0.5 rounded-sm bg-primary/20 text-primary font-bold uppercase">PvP Ranked</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold">Tier: Diamond III</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">Classic Card Clash</h3>
+<span class="font-label-tactical text-[11px] text-on-surface-variant font-medium">Standard 4v4 Tactical Turn-Based</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">2,840</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Rating Points</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Climb the interstellar ladder. Engage in simultaneous astral deck play with dynamic chain mechanics.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-1 rounded-sm">
+<span class="material-symbols-outlined text-tertiary text-[14px]">military_tech</span>
+<span class="font-label-micro text-label-micro text-on-surface font-semibold">Season Chest</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-1 rounded-sm">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-micro text-label-micro text-on-surface font-semibold">Glory x120</span>
+</div>
+</div>
+<button class="min-h-[48px] px-5 bg-surface-container-highest text-primary hover:bg-primary-container hover:text-on-primary-container font-headline-sm text-[13px] uppercase tracking-wider rounded-xl flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+            ENTER QUEUE
+          </button>
+</div>
+</div>
+<!-- MODE 3: TEAM TOURNAMENT (GRAND ASTRAL COLOSSEUM) -->
+<div class="mode-card rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-3 relative overflow-hidden" data-category="pvp event">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-tertiary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">trophy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-micro text-label-micro px-1.5 py-0.5 rounded-sm bg-tertiary/20 text-tertiary font-bold uppercase">Weekend Special</span>
+<span class="font-label-micro text-label-micro text-error font-semibold animate-pulse">Open Reg</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">Grand Astral Colosseum</h3>
+<span class="font-label-tactical text-[11px] text-on-surface-variant font-medium">8-Commander Single Elimination</span>
+</div>
+</div>
+<div class="bg-surface-container-highest px-2 py-1 rounded-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">confirmation_number</span>
+<span class="font-label-numeric text-[11px] text-tertiary font-bold">1 TICKET</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pick two separate squad rosters and outwit rivals in best-of-three series. First place claims <strong class="text-tertiary">10,000 Diamonds</strong> &amp; Title.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<span class="font-label-tactical text-[12px] text-on-surface font-semibold">Registered: <strong>1 / 8</strong></span>
+</div>
+<button class="min-h-[48px] px-5 bg-tertiary text-on-tertiary font-headline-sm text-[13px] uppercase tracking-wider rounded-xl flex items-center gap-1.5 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+            REGISTER
+          </button>
+</div>
+</div>
+<!-- MODE 4: DRAFT CHALLENGE (NEXUS ARENA) -->
+<div class="mode-card rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-3 relative overflow-hidden" data-category="pvp">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">shuffle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-micro text-label-micro px-1.5 py-0.5 rounded-sm bg-secondary/20 text-secondary font-bold uppercase">Fair Play Arena</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">Nexus Draft Arena</h3>
+<span class="font-label-tactical text-[11px] text-on-surface-variant font-medium">Equalized Stats • Pick 8 of 24 Cards</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-1 rounded-sm">
+<span class="material-symbols-outlined text-tertiary text-[14px]">monetization_on</span>
+<span class="font-label-numeric text-[11px] text-on-surface">500</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Draft a randomized syndicate deck on equal footing. Win up to 7 matches before 3 defeats for maximum astral relics.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-micro text-label-micro">
+<span class="material-symbols-outlined text-[16px] text-secondary">casino</span>
+<span>Unowned cards accessible</span>
+</div>
+<button class="min-h-[48px] px-5 bg-surface-container-highest text-secondary hover:bg-secondary hover:text-on-secondary font-headline-sm text-[13px] uppercase tracking-wider rounded-xl flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">style</span>
+            START DRAFT
+          </button>
+</div>
+</div>
+<!-- MODE 5: SURVIVAL CHALLENGE (ENDLESS RIFT SPIRAL) -->
+<div class="mode-card rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-3 relative overflow-hidden" data-category="pve">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">hourglass_top</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-micro text-label-micro px-1.5 py-0.5 rounded-sm bg-primary-container/20 text-primary-fixed-dim font-bold uppercase">Roguelite Solo</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Reset: 3d</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">Endless Rift Spiral</h3>
+<span class="font-label-tactical text-[11px] text-on-surface-variant font-medium">Consecutive Waves • Persistent HP</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">FL. 42</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Current Stage</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Battle endless corrupted void entities. Commander squad HP does not regenerate between consecutive chambers.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="w-20 bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 70%;"></div>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Top 4%</span>
+</div>
+<button class="min-h-[48px] px-5 bg-surface-container-high text-on-surface hover:bg-surface-bright font-headline-sm text-[13px] uppercase tracking-wider rounded-xl flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">forward</span>
+            RESUME RUN
+          </button>
+</div>
+</div>
+</div>
+<!-- ACTIVE SQUAD TELEMETRY DOCK -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-md flex items-center justify-between shadow-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-micro text-label-micro text-secondary font-bold uppercase">DEPLOYMENT READY</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold truncate">Team 1: Astral Dominance</span>
+<div class="flex items-center gap-1">
+<span class="font-label-micro text-label-micro text-on-surface-variant">COMBAT POWER:</span>
+<span class="font-label-numeric text-[12px] text-primary-fixed-dim font-bold">52,860 PWR</span>
+</div>
+</div>
+</div>
+<a class="min-h-[48px] px-3.5 bg-surface-container-lowest text-primary hover:bg-primary/10 rounded-xl flex items-center justify-center gap-1 font-label-tactical text-label-tactical uppercase tracking-wider transition-all flex-shrink-0" href="#">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+        Change
+      </a>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const tabs = document.querySelectorAll('.mode-tab-btn');
+    const cards = document.querySelectorAll('.mode-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Active visual state toggle
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary-container');
+          t.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        tab.classList.add('bg-primary-container', 'text-on-primary-container');
+        tab.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+        const filter = tab.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const categories = card.getAttribute('data-category') || '';
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-8px_24px_rgba(160,120,255,0.12)]" data-active-classes="text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.7))]"><div class="flex items-center justify-around h-20 px-space-xs relative"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-2xl">fort</span><span class="font-label-micro text-label-micro mt-1 uppercase">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="collection" href="#"><span class="absolute top-0 right-1 px-1 bg-secondary-container text-on-secondary-container font-label-micro text-[8px] rounded-full font-bold shadow-sm">48/120</span><span class="material-symbols-outlined text-2xl">style</span><span class="font-label-micro text-label-micro mt-1 uppercase">Collection</span></a><div class="relative -top-3 flex flex-col items-center justify-center"><a class="w-14 h-14 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary flex items-center justify-center text-on-primary-fixed shadow-[0_0_20px_rgba(160,120,255,0.6)] transform rotate-45 border-2 border-primary active:scale-90 transition-transform duration-150" data-path="battle" href="#"><span class="material-symbols-outlined text-3xl transform -rotate-45 text-surface-container-lowest font-black">swords</span></a><span class="font-label-tactical text-label-tactical text-primary font-bold tracking-wider uppercase mt-1 drop-shadow-[0_0_6px_rgba(208,188,255,0.8)]">Battle</span></div><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="team" href="#"><span class="material-symbols-outlined text-2xl">groups_2</span><span class="font-label-micro text-label-micro mt-1 uppercase">Team</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all duration-200 active:scale-95" data-path="commander-profile" href="#"><span class="material-symbols-outlined text-2xl">shield_person</span><span class="font-label-micro text-label-micro mt-1 uppercase">Profile</span></a></div></nav></body></html>
