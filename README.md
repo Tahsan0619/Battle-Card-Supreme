@@ -1,6 +1,6 @@
 # Battle Card Supreme
 
-**Aetherium Rift** collectible card battler — Flutter client + Laravel Sanctum API.
+**Aetherium Rift** collectible card battler - Flutter client + Laravel Sanctum API.
 
 Owned and maintained by **[Tahsan](https://github.com/Tahsan0619)** ([@Tahsan0619](https://github.com/Tahsan0619)).
 
@@ -42,15 +42,15 @@ Command hub: level/XP/energy, Marks & Æther, foundation Elo/rank, **YOUR SQUAD*
 
 Build the 3-card tactical team from **owned** relics only. Locked codes cannot be slotted. Start battle from here or Home.
 
-*(Use the Squad tab in-app — same dark Aetherium chrome as Home/Vault.)*
+*(Use the Squad tab in-app - same dark Aetherium chrome as Home/Vault.)*
 
 ### Astral Exchange
 
 Economy screen: buy **Iron / Silver / Gold Rift Keys** with Marks, then **OPEN** chests. Rates are disclosed per chest. Opening plays a shake → glow burst → staggered reward reveal.
 
-![Exchange — keys & Dock Crate](docs/screenshots/exchange.png)
+![Exchange - keys & Dock Crate](docs/screenshots/exchange.png)
 
-![Exchange — more chests](docs/screenshots/exchange_chests.png)
+![Exchange - more chests](docs/screenshots/exchange_chests.png)
 
 | Chest | Key | Notes |
 |-------|-----|--------|
@@ -70,7 +70,7 @@ Full dossier for a relic: cinematic art, rarity, level, quote, origin/faction/ro
 
 ![Ember Pike](docs/screenshots/hero_ember_pike.png)
 
-![Reed Chorus — combat matrix](docs/screenshots/hero_reed_chorus.png)
+![Reed Chorus - combat matrix](docs/screenshots/hero_reed_chorus.png)
 
 **Locked profile example** (art + lore visible; combat unlock gated):
 
@@ -115,7 +115,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\start_mysql.ps1
 
 # API
 cd api
-copy .env.example .env   # first time — set DB_* then:
+copy .env.example .env   # first time - set DB_* then:
 php artisan key:generate
 php artisan migrate --seed
 php artisan serve --host=0.0.0.0 --port=8000
